@@ -12,7 +12,7 @@ class ReportController extends Controller
       return Report::all();
   }
 
-  public function show($id)
+  public function one($id)
     {
         return Report::find($id);
     }

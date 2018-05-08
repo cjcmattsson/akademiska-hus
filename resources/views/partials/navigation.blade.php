@@ -10,13 +10,14 @@ use Illuminate\Support\Facades\Auth;
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/">CAMPUSKOLLEN <span class="sr-only">(current)</span></a>
         </li>
         @if (Auth::check())
-          <li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{url('admin')}}">ADMIN</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{route('admin.dashboard')}}">DASHBOARD</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{route('admin.profile')}}">PROFIL</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{url('logout')}}">LOGOUT</a>

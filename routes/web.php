@@ -20,4 +20,5 @@ Route::get('logout', 'AuthController@logout');
 Route::post('login', 'AuthController@login');
 
 // User must be logged in to reach Admin Dashboard
-Route::get('/admin', 'AdminController@getContent')->middleware('auth');;
+Route::get('dashboard', 'AdminController@dashboard')->name('admin.dashboard')->middleware('auth');;
+Route::get('profile', 'AdminController@profile')->name('admin.profile')->middleware('auth');;

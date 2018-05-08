@@ -19,4 +19,4 @@ use Illuminate\Http\Request;
 
 Route::get('reports', 'ReportController@all');
 
-Route::get('reports/{id}', 'ReportController@show');
+Route::get('reports/{id}', 'ReportController@one');
