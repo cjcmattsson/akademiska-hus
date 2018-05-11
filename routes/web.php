@@ -15,10 +15,15 @@ Route::get('/', function() {
   return view('index');
 });
 
+// route to the error-report section
+Route::get('felanmallan', 'CreateReportController@index')->name('report');
+Route::post('felanmallan', 'CreateReportController@sendReport')->name('send.report');
+
+
+// User must be logged in to reach Admin Dashboard
 Route::get('/login', 'AuthController@loginPage')->name('login')->middleware('guest');
 Route::get('logout', 'AuthController@logout');
 Route::post('login', 'AuthController@login');
 
-// User must be logged in to reach Admin Dashboard
 Route::get('dashboard', 'AdminController@dashboard')->name('admin.dashboard')->middleware('auth');;
 Route::get('profile', 'AdminController@profile')->name('admin.profile')->middleware('auth');;
