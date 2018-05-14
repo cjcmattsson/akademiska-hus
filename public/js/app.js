@@ -35925,17 +35925,26 @@ module.exports = function spread(callback) {
 /* 36 */
 /***/ (function(module, exports) {
 
-var button = document.querySelectorAll('.campus');
+var city = document.querySelectorAll('.city');
+var campus = document.querySelectorAll('.campus');
 var selection = document.querySelector('.campus-selection');
 
-function clickCounter(e) {
+city.forEach(function (b) {
+    b.addEventListener('click', function () {
+        campus.forEach(function (a) {
+            a.classList.toggle('campus-display');
+        });
+    });
+});
+
+function setCampus(e) {
     if (typeof Storage !== "undefined") {
         localStorage.campus = e.target.textContent;
     }
 }
 
-button.forEach(function (b) {
-    b.addEventListener('click', clickCounter);
+campus.forEach(function (b) {
+    b.addEventListener('click', setCampus);
 });
 
 // if (localStorage.campus) {

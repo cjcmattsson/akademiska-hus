@@ -1,14 +1,23 @@
-const button = document.querySelectorAll('.campus');
+const city = document.querySelectorAll('.city');
+const campus = document.querySelectorAll('.campus');
 const selection = document.querySelector('.campus-selection');
 
-function clickCounter(e) {
+city.forEach((b) => {
+b.addEventListener('click', () => {
+  campus.forEach((a) => {
+    a.classList.toggle('campus-display');
+    })
+  })
+})
+
+function setCampus(e) {
   if(typeof(Storage) !== "undefined") {
           localStorage.campus = e.target.textContent;
       }
   }
 
-button.forEach((b) => {
-  b.addEventListener('click', clickCounter);
+campus.forEach((b) => {
+  b.addEventListener('click', setCampus);
 })
 
 
