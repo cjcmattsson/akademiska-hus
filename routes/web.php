@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function() {
-  return view('index');
-});
+Route::get('/', 'CampusSelectionController@campusSelection');
 
 // route to the error-report section
 Route::get('felanmallan', 'CreateReportController@index')->name('report');

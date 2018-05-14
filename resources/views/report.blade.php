@@ -19,7 +19,7 @@
       <label for="body">Beskrivning av fel</label>
         <textarea name="body" value="" style="resize: none;"></textarea>
         <br>
-      <label for="phone">Ditt telefonnummer</label>
+      <label for="phone">Om du vill ha återkoppling i ärendet, skriv ert telefonnummer</label>
         <input type="text" name="phone" value="">
         <br>
       <button type="submit">Skicka Felanmällan</button>
