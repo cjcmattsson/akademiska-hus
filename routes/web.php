@@ -11,12 +11,16 @@
 |
 */
 
+
 Route::get('/', 'CampusSelectionController@campusSelection');
 
 // route to the error-report section
 Route::get('felanmallan', 'CreateReportController@index')->name('report');
 Route::post('felanmallan', 'CreateReportController@sendReport')->name('send.report');
 
+// Route to NEWSFEED
+Route::get('feed', 'FeedController@index');
+Route::get('campusinfo', 'CampusInfoController@index');
 
 // User must be logged in to reach Admin Dashboard
 Route::get('/login', 'AuthController@loginPage')->name('login')->middleware('guest');

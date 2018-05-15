@@ -2,15 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use Cookie;
 use Illuminate\Routing\Controller;
-use Illuminate\Support\Facades\Auth;
-use App\Cities;
 use Illuminate\Http\Request;
+use App\Cities;
+use Cookie;
 
-class CampusSelectionController extends Controller
+
+class FeedController extends Controller
 {
-  public function campusSelection()
+  public function index()
   {
     if(!isset($_COOKIE['campus'])) {
       $campus = false;
@@ -27,5 +27,7 @@ class CampusSelectionController extends Controller
       ]);
     }
 
+      return view('feed');
   }
+
 }

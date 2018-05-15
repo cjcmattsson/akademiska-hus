@@ -11,9 +11,10 @@ b.addEventListener('click', () => {
 })
 
 function setCampus(e) {
-  if(typeof(Storage) !== "undefined") {
-          localStorage.campus = e.target.textContent;
-      }
+  // if(typeof(Storage) !== "undefined") {
+  //         localStorage.campus = e.target.textContent;
+  //     }
+  document.cookie = `campus=${e.target.textContent}; expires=Thu, 18 Dec 2020 12:00:00 UTC`;
   }
 
 campus.forEach((b) => {

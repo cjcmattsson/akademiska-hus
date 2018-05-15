@@ -1,0 +1,74 @@
+// TOP NAVBAR
+
+// Cahnge this if you change height of top nav
+body {
+  padding-top: 50px!important;
+}
+.navbar-top {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  height: 50px;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .top-icon {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+
+    a {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      color: black;
+      text-decoration: none;
+    }
+  }
+
+  .top-icon:nth-child(1) {
+    justify-content: flex-start;
+    padding-left: 15px;
+  }
+  .top-icon:nth-child(2) {
+    justify-content: center;
+  }
+  .top-icon:nth-child(3) {
+    justify-content: flex-end;
+    padding-right: 15px;
+  }
+}
+
+// Cahnge this if you change height of bottom nav
+body {
+  padding-bottom: 60px!important;
+}
+// BOTTOM NAVBAR
+.navbar-bot {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  height: 60px;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    .nav-item {
+      width: 33%;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 20px;
+      color: black;
+      text-decoration: none;
+    }
+}

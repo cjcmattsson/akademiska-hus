@@ -11,7 +11,7 @@
       @foreach ($cities as $city)
           <li><a class="city">{{$city->campus_city}}</a></li>
         @foreach ($city->campuses as $campus)
-          <li><a class="campus">{{$campus->name}}</a></li>
+          <li><a href="" class="campus">{{$campus->name}}</a></li>
         @endforeach
       @endforeach
     </ul>
