@@ -13693,6 +13693,7 @@ module.exports = __webpack_require__(37);
 
 __webpack_require__(12);
 __webpack_require__(36);
+__webpack_require__(42);
 
 // window.Vue = require('vue');
 
@@ -35925,28 +35926,32 @@ module.exports = function spread(callback) {
 /* 36 */
 /***/ (function(module, exports) {
 
-var city = document.querySelectorAll('.city');
-var campus = document.querySelectorAll('.campus');
+var cities = document.querySelectorAll('.city');
+var campuses = document.querySelectorAll('.campus');
 var selection = document.querySelector('.campus-selection');
 
-city.forEach(function (b) {
-    b.addEventListener('click', function () {
-        campus.forEach(function (a) {
-            a.classList.toggle('campus-display');
-        });
+if (cities) {
+  cities.forEach(function (city) {
+    city.addEventListener('click', function () {
+      campuses.forEach(function (campus) {
+        campus.classList.toggle('campus-display');
+      });
     });
-});
-
-function setCampus(e) {
-    // if(typeof(Storage) !== "undefined") {
-    //         localStorage.campus = e.target.textContent;
-    //     }
-    document.cookie = 'campus=' + e.target.textContent + '; expires=Thu, 18 Dec 2020 12:00:00 UTC';
+  });
 }
 
-campus.forEach(function (b) {
-    b.addEventListener('click', setCampus);
-});
+function setCampus(e) {
+  // if(typeof(Storage) !== "undefined") {
+  //         localStorage.campus = e.target.textContent;
+  //     }
+  document.cookie = 'campus=' + e.target.textContent + '; expires=Thu, 18 Dec 2020 12:00:00 UTC';
+}
+
+if (campuses) {
+  campuses.forEach(function (campus) {
+    campus.addEventListener('click', setCampus);
+  });
+}
 
 // if (localStorage.campus) {
 //   selection.style.display = 'none';
@@ -35957,28 +35962,59 @@ campus.forEach(function (b) {
 var search = document.querySelector(".input-field-search-campus");
 
 function filterCampuses() {
-    var i = void 0;
-    var a = void 0;
-    var filter = search.value.toUpperCase();
-    var ul = document.querySelector(".campus-list");
-    var li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
+  var i = void 0;
+  var a = void 0;
+  var filter = search.value.toUpperCase();
+  var ul = document.querySelector(".campus-list");
+  var li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
     }
+  }
 }
 
-search.addEventListener('keyup', filterCampuses);
+if (search) {
+  search.addEventListener('keyup', filterCampuses);
+}
 
 /***/ }),
 /* 37 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 38 */,
+/* 39 */,
+/* 40 */,
+/* 41 */,
+/* 42 */
+/***/ (function(module, exports) {
+
+var settings = document.querySelector('.settings');
+var contact = document.querySelector('.contact');
+
+var settingsSideMenu = document.querySelector('.settings-side-menu');
+
+function showSettingsMenu() {
+  settingsSideMenu.classList.toggle('show-settings');
+  contactSideMenu.classList.remove('show-contact');
+}
+
+settings.addEventListener('click', showSettingsMenu);
+
+var contactSideMenu = document.querySelector('.contact-side-menu');
+
+function showContactMenu() {
+  contactSideMenu.classList.toggle('show-contact');
+  settingsSideMenu.classList.remove('show-settings');
+}
+
+contact.addEventListener('click', showContactMenu);
 
 /***/ })
 /******/ ]);

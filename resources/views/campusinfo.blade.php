@@ -1,5 +1,9 @@
 @extends('layouts.default')
 
 @section('content')
-  <h1 class="header-hero">{{$campus}}</h1>
+  {{-- style="background-image: url('{{}}')" --}}
+  <div class="campus-header">
+
+    <h1 class="header-hero">{{$campus}}</h1>
+  </div>
 @stop

@@ -5,20 +5,19 @@ use Illuminate\Support\Facades\Auth;
 <div class="navbar-top">
 
         {{-- LEFT bottom navbar place --}}
-        <div class="top-icon">
-          <a class="phone" href="/"><i class="material-icons">phone</i></a>
+        <div class="navbar-top-bar">
+          <div class="top-icon">
+            <a class="contact"><i class="material-icons">phone</i></a>
+          </div>
+          <div class="top-icon">
+            <a class="logo" href="{{url('/feed')}}"><i class="material-icons">radio</i></a>
+          </div>
+          <div class="top-icon">
+            <a class="settings"><i class="material-icons">settings</i></a>
+          </div>
         </div>
-        <div class="top-icon">
-          <a class="logo" href="{{route('admin.dashboard')}}"><i class="material-icons">radio</i></a>
-        </div>
-        @if (Auth::check())
 
 
-
-          @else
-            <div class="top-icon">
-              <a class="settings " href="{{route('report')}}"><i class="material-icons">settings</i></a>
-            </div>
               {{-- Put this in the cog-wheel section later --}}
               {{-- <a class="nav-link" href="{{route('admin.profile')}}">PROFIL</a> --}}
               {{-- Put this in the cog-wheel section later --}}
@@ -27,6 +26,6 @@ use Illuminate\Support\Facades\Auth;
               {{-- Put this in the cog-wheel section later --}}
               {{-- <a class="nav-link" href="{{url('login')}}">LOGIN</a> --}}
 
-          @endif
-
+              <div class="contact-side-menu"></div>
+              <div class="settings-side-menu"></div>
 </div>

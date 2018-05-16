@@ -1,0 +1,30 @@
+.settings-side-menu {
+  height: 100vh;
+  width: 80vw;
+  position: absolute;
+  background-color: salmon;
+  top: 0;
+  right: -85vw;
+  z-index: 0!important;
+  transition: all 0.5s ease;
+}
+
+.show-settings{
+  right: 0vw;
+}
+
+.contact-side-menu {
+  height: 100vh;
+  width: 80vw;
+  position: absolute;
+  background-color: salmon;
+  top: 0;
+  // bottom: 0;
+  left: -85vw;
+  z-index: 10!important;
+  transition: all 0.5s ease;
+}
+
+.show-contact{
+  left: 0vw;
+}

@@ -1,14 +1,16 @@
-const city = document.querySelectorAll('.city');
-const campus = document.querySelectorAll('.campus');
+const cities = document.querySelectorAll('.city');
+const campuses = document.querySelectorAll('.campus');
 const selection = document.querySelector('.campus-selection');
 
-city.forEach((b) => {
-b.addEventListener('click', () => {
-  campus.forEach((a) => {
-    a.classList.toggle('campus-display');
+if (cities) {
+  cities.forEach((city) => {
+    city.addEventListener('click', () => {
+      campuses.forEach((campus) => {
+        campus.classList.toggle('campus-display');
+      })
     })
   })
-})
+}
 
 function setCampus(e) {
   // if(typeof(Storage) !== "undefined") {
@@ -17,9 +19,11 @@ function setCampus(e) {
   document.cookie = `campus=${e.target.textContent}; expires=Thu, 18 Dec 2020 12:00:00 UTC`;
   }
 
-campus.forEach((b) => {
-  b.addEventListener('click', setCampus);
-})
+if (campuses) {
+  campuses.forEach((campus) => {
+    campus.addEventListener('click', setCampus);
+  })
+}
 
 
 // if (localStorage.campus) {
@@ -47,4 +51,6 @@ function filterCampuses() {
     }
 }
 
-search.addEventListener('keyup', filterCampuses);
+if (search) {
+  search.addEventListener('keyup', filterCampuses);
+}

@@ -2,18 +2,25 @@
 
 // Cahnge this if you change height of top nav
 body {
-  padding-top: 50px!important;
+  padding-top: 40px!important;
 }
 .navbar-top {
   top: 0;
   left: 0;
   position: fixed;
   width: 100vw;
-  height: 50px;
-  background-color: grey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 40px;
+
+  .navbar-top-bar {
+    background-color: grey;
+    position: fixed;
+    width: 100vw;
+    height: 40px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .top-icon {
     width: 33%;

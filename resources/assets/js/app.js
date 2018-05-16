@@ -7,6 +7,7 @@
 
 require('./bootstrap');
 require('./campus');
+require('./side-menus');
 
 // window.Vue = require('vue');
 
