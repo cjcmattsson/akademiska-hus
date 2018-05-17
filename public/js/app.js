@@ -35929,6 +35929,7 @@ module.exports = function spread(callback) {
 var cities = document.querySelectorAll('.city');
 var campuses = document.querySelectorAll('.campus');
 var selection = document.querySelector('.campus-selection');
+var topNav = document.querySelector('.navbar-top-bar');
 
 if (cities) {
   cities.forEach(function (city) {
@@ -35981,6 +35982,14 @@ if (search) {
   search.addEventListener('keyup', filterCampuses);
 }
 
+function getCookie(name) {
+  var re = new RegExp(name + "=([^;]+)");
+  var value = re.exec(document.cookie);
+  return value != null ? unescape(value[1]) : null;
+}
+
+if (getCookie('campus')) {}
+
 /***/ }),
 /* 37 */
 /***/ (function(module, exports) {
@@ -35995,7 +36004,9 @@ function showSettingsMenu() {
   contactSideMenu.classList.remove('show-contact');
 }
 
-settings.addEventListener('click', showSettingsMenu);
+if (settings) {
+  settings.addEventListener('click', showSettingsMenu);
+}
 
 var contactSideMenu = document.querySelector('.contact-side-menu');
 
@@ -36004,7 +36015,9 @@ function showContactMenu() {
   settingsSideMenu.classList.remove('show-settings');
 }
 
-contact.addEventListener('click', showContactMenu);
+if (contact) {
+  contact.addEventListener('click', showContactMenu);
+}
 
 /***/ }),
 /* 38 */

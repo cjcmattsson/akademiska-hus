@@ -1,6 +1,7 @@
 const cities = document.querySelectorAll('.city');
 const campuses = document.querySelectorAll('.campus');
 const selection = document.querySelector('.campus-selection');
+const topNav = document.querySelector('.navbar-top-bar');
 
 if (cities) {
   cities.forEach((city) => {
@@ -53,4 +54,15 @@ function filterCampuses() {
 
 if (search) {
   search.addEventListener('keyup', filterCampuses);
+}
+
+function getCookie(name)
+  {
+    var re = new RegExp(name + "=([^;]+)");
+    var value = re.exec(document.cookie);
+    return (value != null) ? unescape(value[1]) : null;
+  }
+
+if (getCookie('campus')) {
+
 }

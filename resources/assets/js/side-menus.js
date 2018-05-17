@@ -8,7 +8,9 @@ function showSettingsMenu(){
   contactSideMenu.classList.remove('show-contact');
 }
 
-settings.addEventListener('click', showSettingsMenu);
+if (settings) {
+  settings.addEventListener('click', showSettingsMenu);
+}
 
 const contactSideMenu = document.querySelector('.contact-side-menu')
 
@@ -17,4 +19,6 @@ function showContactMenu(){
   settingsSideMenu.classList.remove('show-settings');
 }
 
-contact.addEventListener('click', showContactMenu);
+if (contact) {
+  contact.addEventListener('click', showContactMenu);
+}
