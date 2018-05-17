@@ -1,4 +1,4 @@
-.settings-side-menu {
+.settings-side-menu, .contact-side-menu {
   height: 100vh;
   width: 80vw;
   position: absolute;
@@ -7,6 +7,11 @@
   right: -85vw;
   z-index: 0!important;
   transition: all 0.5s ease;
+  z-index: 100;
+}
+
+.settings-side-menu {
+  right: -85vw;
 }
 
 .show-settings{
@@ -14,15 +19,7 @@
 }
 
 .contact-side-menu {
-  height: 100vh;
-  width: 80vw;
-  position: absolute;
-  background-color: salmon;
-  top: 0;
-  // bottom: 0;
   left: -85vw;
-  z-index: 10!important;
-  transition: all 0.5s ease;
 }
 
 .show-contact{

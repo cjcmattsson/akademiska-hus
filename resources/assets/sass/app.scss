@@ -1,10 +1,11 @@
-
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// General
+@import "project/colors";
+@import "project/typography";
+@import "project/general";
 
 // My stylesheets
 @import "components/navbar";
 @import "components/campus-selection";
-@import "components/general";
 @import "components/side-menus";
 @import "components/campus-page";
+@import "components/news-feed";

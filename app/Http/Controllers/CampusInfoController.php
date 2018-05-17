@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Campus;
 
 class CampusInfoController extends Controller
 {
@@ -12,10 +13,13 @@ class CampusInfoController extends Controller
           $campus = "Select Campus";
         } else {
           $campus = $_COOKIE['campus'];
+          $campusInfo = Campus::where('name', $campus)->first();
         };
-
         return view('campusinfo', [
-          'campus' => $campus,
+          'campus' => $campusInfo
         ]);
+
+
     }
+
   }

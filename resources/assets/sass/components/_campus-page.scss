@@ -6,6 +6,66 @@
   align-items: flex-end;
 
   h1 {
-    margin: 0 15px;
+    margin: 15px;
+  }
+}
+
+.campus-info-and-contact {
+  padding: 15px;
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+
+  p {
+    margin: 5px 0;
+  }
+
+  .info-contact-buttons {
+    height: 130px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .button-and-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .button {
+        z-index: 1;
+        height: 55px;
+        width: 55px;
+        border-radius: 50%;
+        background-color: grey;
+        position: relative;
+      }
+
+      .happening-notification:after {
+        content: '!';
+        position:absolute;
+        top:-1px;
+        right:-1px;
+        background:red;
+        color:white;
+        width:18px;height:18px;
+        text-align:center;
+        line-height:18px;
+        border-radius:50%;
+        -webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);
+      }
+
+      @media (min-width: 370px) {
+        .button {
+          height: 65px;
+          width: 65px;
+        }
+      }
+
+    }
   }
 }

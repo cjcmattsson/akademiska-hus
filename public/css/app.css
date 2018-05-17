@@ -1,4 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);body {
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
   padding-top: 40px !important;
 }
 
@@ -115,17 +125,8 @@ body {
   width: 100%;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.settings-side-menu {
+.settings-side-menu,
+.contact-side-menu {
   height: 100vh;
   width: 80vw;
   position: absolute;
@@ -135,6 +136,11 @@ body {
   z-index: 0 !important;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  z-index: 100;
+}
+
+.settings-side-menu {
+  right: -85vw;
 }
 
 .show-settings {
@@ -142,15 +148,7 @@ body {
 }
 
 .contact-side-menu {
-  height: 100vh;
-  width: 80vw;
-  position: absolute;
-  background-color: salmon;
-  top: 0;
   left: -85vw;
-  z-index: 10 !important;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
 .show-contact {
@@ -170,6 +168,155 @@ body {
 }
 
 .campus-header h1 {
-  margin: 0 15px;
+  margin: 15px;
+}
+
+.campus-info-and-contact {
+  padding: 15px;
+  height: auto;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.campus-info-and-contact p {
+  margin: 5px 0;
+}
+
+.campus-info-and-contact .info-contact-buttons {
+  height: 130px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.campus-info-and-contact .info-contact-buttons .button-and-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.campus-info-and-contact .info-contact-buttons .button-and-text .button {
+  z-index: 1;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  background-color: grey;
+  position: relative;
+}
+
+.campus-info-and-contact .info-contact-buttons .button-and-text .happening-notification:after {
+  content: '!';
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  background: red;
+  color: white;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+@media (min-width: 370px) {
+  .campus-info-and-contact .info-contact-buttons .button-and-text .button {
+    height: 65px;
+    width: 65px;
+  }
+}
+
+.news-feed {
+  height: auto;
+  width: 100vw;
+  padding: 30px 20px;
+}
+
+.news-feed p {
+  margin: 0;
+}
+
+.news-feed .one-news-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 120px;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.news-feed .one-news-item .news-image {
+  height: 100%;
+  min-width: 120px;
+  width: 120px;
+  background-color: grey;
+}
+
+.news-feed .one-news-item .news-text {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.news-feed .one-news-item .news-text .city-and-date {
+  font-style: italic;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.news-feed .one-news-item .news-text .news-main-content-text-short {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
 }
 
