@@ -10,22 +10,25 @@ use Illuminate\Http\Request;
 
 class CampusSelectionController extends Controller
 {
+
+  public function setCampusCookie()
+  {
+    Cookie::queue(Cookie::forever('campus', request()->get('campus')));
+    return view('feed');
+  }
+
+
   public function campusSelection()
   {
-    if(!isset($_COOKIE['campus'])) {
-      $campus = false;
-    } else {
-      $campus = $_COOKIE['campus'];
+    if(Cookie::has('campus')) {
+      return redirect()->route('feed');
     }
-
-    if($campus) {
-      return view('feed');
-    } else {
-      $cities = Cities::with('campuses')->get();
-      return view('index', [
-        'cities' => $cities,
-      ]);
-    }
+    $cities = Cities::with('campuses')->get();
+    return view('index', [
+      'cities' => $cities,
+    ]);
 
   }
+
+
 }

@@ -13695,17 +13695,17 @@ __webpack_require__(12);
 __webpack_require__(36);
 __webpack_require__(37);
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function () {
-    navigator.serviceWorker.register('/sw.js').then(function (registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function (err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}
+// if ('serviceWorker' in navigator) {
+//   window.addEventListener('load', function() {
+//     navigator.serviceWorker.register('/sw.js').then(function(registration) {
+//       // Registration was successful
+//       console.log('ServiceWorker registration successful with scope: ', registration.scope);
+//     }, function(err) {
+//       // registration failed :(
+//       console.log('ServiceWorker registration failed: ', err);
+//     });
+//   });
+// }
 
 /***/ }),
 /* 12 */

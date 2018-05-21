@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Auth;
 <div class="navbar-bot">
 
         {{-- LEFT bottom navbar place --}}
-        <a class="news nav-item" href="/">Nyheter</a>
+        <a class="news nav-item" href="{{url('feed')}}">Nyheter</a>
         @if (Auth::check())
             {{-- If logged in - Middle bottom navbar place --}}
             <a class="dashboard nav-item" href="{{route('admin.dashboard')}}">DASHBOARD</a>

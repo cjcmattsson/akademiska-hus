@@ -7,19 +7,13 @@ use App\Campus;
 
 class CampusInfoController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        if(!isset($_COOKIE['campus'])) {
-          $campus = "Select Campus";
-        } else {
-          $campus = $_COOKIE['campus'];
-          $campusInfo = Campus::where('name', $campus)->first();
-        };
+        $campus = $request->cookie('campus');
+        $campusInfo = Campus::where('name', $campus)->first();
         return view('campusinfo', [
           'campus' => $campusInfo
         ]);
-
-
     }
 
   }
