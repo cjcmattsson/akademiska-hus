@@ -1,12 +1,35 @@
 .campus-header {
+  position: relative;
   height: 200px;
+  background: url('http://unsplash.it/1200x800') center center no-repeat;
   background-size: cover;
-  background-color: rgb(138, 204, 126);
   display: flex;
   align-items: flex-end;
 
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: -webkit-linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 100%);
+    background-image: -o-linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 100%);
+    background-image: linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 100%);
+      }
+
   h1 {
+    position: absolute;
+    bottom: 0;
+    border-left: 8px solid $main-green;
+    padding-left: 10px;
+    font-family: $header-font;
+    font-size: 32px;
+    color: #3A3F44;
+    font-weight: normal;
     margin: 15px;
+    width: 80%;
+    opacity: 1;
   }
 }
 
@@ -21,12 +44,26 @@
     margin: 5px 0;
   }
 
+  .read-more {
+    background-color: #F71264;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 0;
+    color: white;
+    font-size: 15px;
+    margin-bottom: -10px;
+    z-index: 50;
+  }
+
   .info-contact-buttons {
     height: 130px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    border-top: 1px solid rgba(184, 184, 184, 0.53);
 
     .button-and-text {
       display: flex;
@@ -36,33 +73,39 @@
 
       .button {
         z-index: 1;
-        height: 55px;
-        width: 55px;
+        width: auto;
         border-radius: 50%;
-        background-color: grey;
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $main-green;
+
+        .material-icons {
+          font-size: 50px!important;
+        }
       }
 
-      .happening-notification:after {
-        content: '!';
-        position:absolute;
-        top:-1px;
-        right:-1px;
-        background:red;
-        color:white;
-        width:18px;height:18px;
-        text-align:center;
-        line-height:18px;
-        border-radius:50%;
-        -webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);
-        box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);
-      }
+      // .happening-notification:after {
+      //   content: '!';
+      //   position:absolute;
+      //   top:-1px;
+      //   right:-1px;
+      //   background:red;
+      //   color:white;
+      //   width:18px;height:18px;
+      //   text-align:center;
+      //   line-height:18px;
+      //   border-radius:50%;
+      //   -webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);
+      //   -moz-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);
+      //   box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);
+      // }
 
       @media (min-width: 370px) {
         .button {
-          height: 65px;
-          width: 65px;
+          height: auto;
+          width: auto;
         }
       }
 

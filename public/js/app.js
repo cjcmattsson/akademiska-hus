@@ -13695,19 +13695,17 @@ __webpack_require__(12);
 __webpack_require__(36);
 __webpack_require__(37);
 
-// window.Vue = require('vue');
-
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-
-// Vue.component('example-component', require('./components/ExampleComponent.vue'));
-//
-// const app = new Vue({
-//     el: '#app'
-// });
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('/sw.js').then(function (registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function (err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
 
 /***/ }),
 /* 12 */
@@ -35928,23 +35926,22 @@ module.exports = function spread(callback) {
 
 var cities = document.querySelectorAll('.city');
 var campuses = document.querySelectorAll('.campus');
+// const iconAdd = document.querySelectorAll('.material-icons.add');
+// const iconRemove = document.querySelectorAll('.material-icons.remove');
 var selection = document.querySelector('.campus-selection');
 var topNav = document.querySelector('.navbar-top-bar');
 
 if (cities) {
   cities.forEach(function (city) {
     city.addEventListener('click', function () {
-      campuses.forEach(function (campus) {
-        campus.classList.toggle('campus-display');
-      });
+      city.querySelector('.campuses-in-city').classList.toggle('campus-display');
+      city.querySelector("a .add").classList.toggle('hide-icon');
+      city.querySelector("a .remove").classList.toggle('show-icon');
     });
   });
 }
 
 function setCampus(e) {
-  // if(typeof(Storage) !== "undefined") {
-  //         localStorage.campus = e.target.textContent;
-  //     }
   document.cookie = 'campus=' + e.target.textContent + '; expires=Thu, 18 Dec 2020 12:00:00 UTC';
 }
 

@@ -1,27 +1,28 @@
-@extends('layouts.default-campus-selection')
+@extends('layouts.campus')
 
 @section('content')
   <div class="campus-selection-header">
+    <h1>Campus</h1>
     <i class="material-icons">radio</i>
+    <h1>kollen</h1>
   </div>
   <div class="campus-selection">
+  <h2>Välj campus</h2>
+    <input class="input-field-search-campus" type="text" name="" placeholder="Sök..">
     <div class="search-content-wrapper">
-    <h1>Välj campus</h1>
-    <div class="campuses-search-and-list">
-      <div class="search-campus">
-        <input class="input-field-search-campus" type="text" name="" placeholder="Sök stad eller campus">
-      </div>
+    <div class="campuses-list">
       <ul class="campus-list">
         @foreach ($cities as $city)
-          <li><a class="city">{{$city->campus_city}}</a></li>
+          <li class="city"><a>{{$city->campus_city}}<i class="material-icons add">add</i><i class="material-icons remove">remove</i></a>
+            <ul class="campuses-in-city">
           @foreach ($city->campuses as $campus)
-            <li><a href="" class="campus">{{$campus->name}}</a></li>
+            <li><a href="" class="campus">{{$campus->name}}</a><i class="material-icons">keyboard_arrow_right</i></li>
           @endforeach
+            </ul>
+          </li>
         @endforeach
       </ul>
     </div>
   </div>
   </div>
-
-
-@stop
+@endsection

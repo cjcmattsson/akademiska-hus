@@ -1,61 +1,136 @@
 .campus-selection-header {
   top: 0;
   left: 0;
-  position: fixed;
   width: 100vw;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
 }
 
 .campus-selection {
   width: 100vw;
-  padding: 0 15px;
-  height: 100%;
+  padding: 0 8%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 
-
-.search-content-wrapper {
-  margin-top: 8%;
-  padding: 0 15px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-
-  h1 {
-    text-transform: uppercase;
-    margin-top: 9%;
-    width: 100%;
-    margin-bottom: 5px;
-    text-align: left;
-  }
-
-  .campuses-search-and-list {
-    position: relative;
-    width: 90vw;
-    height: 68vh;
-    overflow: scroll;
-    border: 1px solid black;
-
-    .search-campus input {
-      position: absolute;
-      height: 50px;
-      background-color: grey;
+    h2 {
+      font-family: 'times';
+      font-weight: normal;
+      font-size: 25px;
+      margin-top: 9%;
       width: 100%;
+      margin-bottom: 5px;
+      text-align: left;
     }
 
-    ul {
-      font-size: $paragraphFontSize;
-      list-style: none;
-      padding: 50px 15px 0;
-      min-width: 100%;
+
+    .input-field-search-campus {
+      font-size: 15px;
+      background-color: #F4F5F7;
+      font-weight: lighter;
+      color: grey;
+      border: none;
+      padding-left: 15px;
+      height: 45px;
+      width: 100%;
+      background-image: url('search.svg');
+      background-repeat: no-repeat;
+      background-position: 98% center;
+      padding-right: 15px;
+    }
+
+    .input-field-search-campus:focus {
+      outline: none;
+    }
+
+
+
+    .search-content-wrapper {
+      margin-top: 8%;
+      height: auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      .campuses-list {
+        width: 100%;
+
+        .campus-list {
+          height: auto;
+          margin: 0;
+          list-style: none;
+          padding: 0;
+          min-width: 100%;
+
+          .city:nth-child(even) {
+            background-color: #F2F7F4;
+          }
+          .city {
+            padding: 2px 5px;
+            font-size: $paragraphFontSize;
+            text-transform: uppercase;
+
+            ul {
+              font-size: $paragraphFontSize;
+              list-style: none;
+              font-size: 12px;
+              padding-left: 10px;
+              text-transform: capitalize;
+                a {
+                  text-decoration: none;
+                }
+
+                a:visited {
+                  color: black;
+                }
+            }
+
+            a {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+
+              .remove {
+                display: none;
+              }
+              .show-icon {
+                display: block;
+              }
+              .hide-icon {
+                display: none;
+              }
+
+            }
+          }
+
+          .campuses-in-city {
+            display: none;
+            padding: 5px 0 10px 10px;
+
+            li {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              flex-direction: row;
+              padding: 2px;
+              padding-right: 0;
+              border-bottom: 0.3px solid grey;
+            }
+          }
+          .campus-display {
+            display: block;
+          }
+        }
+      }
     }
   }
-}
-
-}

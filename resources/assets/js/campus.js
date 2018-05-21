@@ -1,24 +1,25 @@
 const cities = document.querySelectorAll('.city');
 const campuses = document.querySelectorAll('.campus');
+// const iconAdd = document.querySelectorAll('.material-icons.add');
+// const iconRemove = document.querySelectorAll('.material-icons.remove');
 const selection = document.querySelector('.campus-selection');
 const topNav = document.querySelector('.navbar-top-bar');
 
 if (cities) {
   cities.forEach((city) => {
     city.addEventListener('click', () => {
-      campuses.forEach((campus) => {
-        campus.classList.toggle('campus-display');
+      city.querySelector('.campuses-in-city').classList.toggle('campus-display');
+      city.querySelector("a .add").classList.toggle('hide-icon');
+      city.querySelector("a .remove").classList.toggle('show-icon');
+
       })
     })
-  })
 }
 
+
 function setCampus(e) {
-  // if(typeof(Storage) !== "undefined") {
-  //         localStorage.campus = e.target.textContent;
-  //     }
-  document.cookie = `campus=${e.target.textContent}; expires=Thu, 18 Dec 2020 12:00:00 UTC`;
-  }
+    document.cookie = `campus=${e.target.textContent}; expires=Thu, 18 Dec 2020 12:00:00 UTC`;
+}
 
 if (campuses) {
   campuses.forEach((campus) => {

@@ -1,3 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.material-icons {
+  font-weight: 100;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -12,6 +20,12 @@ body {
   padding-top: 40px !important;
 }
 
+.navbar-bot,
+.navbar-top-bar {
+  background-color: #6FBC4D;
+  color: white;
+}
+
 .navbar-top {
   top: 0;
   left: 0;
@@ -21,7 +35,6 @@ body {
 }
 
 .navbar-top .navbar-top-bar {
-  background-color: grey;
   position: fixed;
   width: 100vw;
   height: 40px;
@@ -38,7 +51,7 @@ body {
 }
 
 .navbar-top .top-icon {
-  width: 33%;
+  width: 33.3333%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,7 +59,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: black;
   text-decoration: none;
 }
 
@@ -58,8 +70,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: black;
   text-decoration: none;
+  color: white;
 }
 
 .navbar-top .top-icon:nth-child(1) {
@@ -92,7 +104,6 @@ body {
   position: fixed;
   width: 100vw;
   height: 50px;
-  background-color: grey;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,6 +116,7 @@ body {
 }
 
 .navbar-bot .nav-item {
+  z-index: 15;
   width: 33%;
   height: 100%;
   display: -webkit-box;
@@ -116,15 +128,39 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 20px;
-  color: black;
+  padding-bottom: 12px;
   text-decoration: none;
+  color: white;
+  border-width: thin;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.navbar-bot:before {
+  z-index: 1;
+  font-family: 'Material Icons';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: -25px;
+  content: 'build';
+  font-size: 25px;
+  background-color: #6FBC4D;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
 }
 
 .campus-selection-header {
   top: 0;
   left: 0;
-  position: fixed;
   width: 100vw;
   height: 40px;
   display: -webkit-box;
@@ -138,10 +174,14 @@ body {
           align-items: center;
 }
 
+.campus-selection-header h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
 .campus-selection {
   width: 100vw;
-  padding: 0 15px;
-  height: 100%;
+  padding: 0 8%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,10 +197,39 @@ body {
           justify-content: flex-start;
 }
 
+.campus-selection h2 {
+  font-family: 'times';
+  font-weight: normal;
+  font-size: 25px;
+  margin-top: 9%;
+  width: 100%;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.campus-selection .input-field-search-campus {
+  font-size: 15px;
+  background-color: #F4F5F7;
+  font-weight: lighter;
+  color: grey;
+  border: none;
+  padding-left: 15px;
+  height: 45px;
+  width: 100%;
+  background-image: url(/images/search.svg?3509a1c63820f47682641085f7d8ccf9);
+  background-repeat: no-repeat;
+  background-position: 98% center;
+  padding-right: 15px;
+}
+
+.campus-selection .input-field-search-campus:focus {
+  outline: none;
+}
+
 .campus-selection .search-content-wrapper {
   margin-top: 8%;
-  padding: 0 15px;
-  height: 100%;
+  height: auto;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,34 +242,98 @@ body {
           align-items: flex-end;
 }
 
-.campus-selection .search-content-wrapper h1 {
-  text-transform: uppercase;
-  margin-top: 9%;
-  width: 100%;
-  margin-bottom: 5px;
-  text-align: left;
-}
-
-.campus-selection .search-content-wrapper .campuses-search-and-list {
-  position: relative;
-  width: 90vw;
-  height: 68vh;
-  overflow: scroll;
-  border: 1px solid black;
-}
-
-.campus-selection .search-content-wrapper .campuses-search-and-list .search-campus input {
-  position: absolute;
-  height: 50px;
-  background-color: grey;
+.campus-selection .search-content-wrapper .campuses-list {
   width: 100%;
 }
 
-.campus-selection .search-content-wrapper .campuses-search-and-list ul {
-  font-size: 18px;
+.campus-selection .search-content-wrapper .campuses-list .campus-list {
+  height: auto;
+  margin: 0;
   list-style: none;
-  padding: 50px 15px 0;
+  padding: 0;
   min-width: 100%;
+}
+
+.campus-selection .search-content-wrapper .campuses-list .campus-list .city:nth-child(even) {
+  background-color: #F2F7F4;
+}
+
+.campus-selection .search-content-wrapper .campuses-list .campus-list .city {
+  padding: 2px 5px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.campus-selection .search-content-wrapper .campuses-list .campus-list .city ul {
+  font-size: 15px;
+  list-style: none;
+  font-size: 12px;
+  padding-left: 10px;
+  text-transform: capitalize;
+}
+
+.campus-selection .search-content-wrapper .campuses-list .campus-list .city ul a {
+  text-decoration: none;
+}
+
+.campus-selection .search-content-wrapper .campuses-list .campus-list .city ul a:visited {
+  color: black;
+}
+
+.campus-selection .search-content-wrapper .campuses-list .campus-list .city a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.campus-selection .search-content-wrapper .campuses-list .campus-list .city a .remove {
+  display: none;
+}
+
+.campus-selection .search-content-wrapper .campuses-list .campus-list .city a .show-icon {
+  display: block;
+}
+
+.campus-selection .search-content-wrapper .campuses-list .campus-list .city a .hide-icon {
+  display: none;
+}
+
+.campus-selection .search-content-wrapper .campuses-list .campus-list .campuses-in-city {
+  display: none;
+  padding: 5px 0 10px 10px;
+}
+
+.campus-selection .search-content-wrapper .campuses-list .campus-list .campuses-in-city li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 2px;
+  padding-right: 0;
+  border-bottom: 0.3px solid grey;
+}
+
+.campus-selection .search-content-wrapper .campuses-list .campus-list .campus-display {
+  display: block;
 }
 
 .settings-side-menu,
@@ -234,9 +367,10 @@ body {
 }
 
 .campus-header {
+  position: relative;
   height: 200px;
+  background: url("http://unsplash.it/1200x800") center center no-repeat;
   background-size: cover;
-  background-color: #8acc7e;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,8 +379,29 @@ body {
           align-items: flex-end;
 }
 
+.campus-header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.9)));
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 100%);
+}
+
 .campus-header h1 {
+  position: absolute;
+  bottom: 0;
+  border-left: 8px solid #6FBC4D;
+  padding-left: 10px;
+  font-family: "times", serif;
+  font-size: 32px;
+  color: #3A3F44;
+  font-weight: normal;
   margin: 15px;
+  width: 80%;
+  opacity: 1;
 }
 
 .campus-info-and-contact {
@@ -266,6 +421,19 @@ body {
   margin: 5px 0;
 }
 
+.campus-info-and-contact .read-more {
+  background-color: #F71264;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 0;
+  color: white;
+  font-size: 15px;
+  margin-bottom: -10px;
+  z-index: 50;
+}
+
 .campus-info-and-contact .info-contact-buttons {
   height: 130px;
   width: 100%;
@@ -278,6 +446,7 @@ body {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  border-top: 1px solid rgba(184, 184, 184, 0.53);
 }
 
 .campus-info-and-contact .info-contact-buttons .button-and-text {
@@ -298,33 +467,29 @@ body {
 
 .campus-info-and-contact .info-contact-buttons .button-and-text .button {
   z-index: 1;
-  height: 55px;
-  width: 55px;
+  width: auto;
   border-radius: 50%;
-  background-color: grey;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #6FBC4D;
 }
 
-.campus-info-and-contact .info-contact-buttons .button-and-text .happening-notification:after {
-  content: '!';
-  position: absolute;
-  top: -1px;
-  right: -1px;
-  background: red;
-  color: white;
-  width: 18px;
-  height: 18px;
-  text-align: center;
-  line-height: 18px;
-  border-radius: 50%;
-  -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.75);
+.campus-info-and-contact .info-contact-buttons .button-and-text .button .material-icons {
+  font-size: 50px !important;
 }
 
 @media (min-width: 370px) {
   .campus-info-and-contact .info-contact-buttons .button-and-text .button {
-    height: 65px;
-    width: 65px;
+    height: auto;
+    width: auto;
   }
 }
 
@@ -395,6 +560,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 18px;
+  font-size: 15px;
 }
 
