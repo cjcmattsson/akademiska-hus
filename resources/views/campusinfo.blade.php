@@ -8,6 +8,7 @@
   </div>
 
   <div class="campus-info-and-contact">
+    <div class="main-text-overlay"></div>
     <p class="paragraph-text main-text-campus">{{$campus->info}}</p>
     <button class="read-more" type="button" name="button">+</button>
     <div class="info-contact-buttons">

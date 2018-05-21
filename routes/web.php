@@ -19,8 +19,13 @@ Route::post('/', 'CampusSelectionController@setCampusCookie')->name('store.campu
 Route::get('felanmallan', 'CreateReportController@index')->name('report')->middleware('campus');
 Route::post('felanmallan', 'CreateReportController@sendReport')->name('send.report');
 
-// Route to NEWSFEED
-Route::get('feed', 'FeedController@index')->name('feed')->middleware('campus');
+// Route to NEWSFEEDS
+Route::get('feed', 'FeedController@news')->name('feed')->middleware('campus');
+// Route::get('feed/campus', 'FeedController@news')->name('campus')->middleware('campus');
+// Route::get('feed/aha', 'FeedController@news')->name('aha')->middleware('campus');
+// Route::get('feed/questions', 'FeedController@news')->name('questions')->middleware('campus');
+
+// Route to chosen CAMPUS
 Route::get('campusinfo', 'CampusInfoController@index')->middleware('campus');
 
 // User must be logged in to reach Admin Dashboard

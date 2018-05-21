@@ -10,9 +10,9 @@ use Cookie;
 
 class FeedController extends Controller
 {
-  public function index()
+  public function news()
   {
-      return view('feed');
+      return view('news');
   }
 
 }
