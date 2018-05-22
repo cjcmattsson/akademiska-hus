@@ -36042,8 +36042,25 @@ var campusPage = document.querySelector('.campus');
 var questionsPage = document.querySelector('.q-and-a');
 
 ahaNav.addEventListener('click', function () {
-  ahaPage.style.left = "0";
-  campusPage.style.right = "-100vw";
+  ahaPage.classList.remove('aha-left');
+  campusPage.classList.remove('campus-middle');
+  campusPage.classList.remove('campus-left');
+  campusPage.classList.add('campus-right');
+  questionsPage.classList.remove('questions-middle');
+});
+
+campusNav.addEventListener('click', function () {
+  campusPage.classList.remove('campus-left');
+  campusPage.classList.remove('campus-right');
+  ahaPage.classList.add('aha-left');
+  campusPage.classList.add('campus-middle');
+  questionsPage.classList.remove('questions-middle');
+});
+
+questionsNav.addEventListener('click', function () {
+  campusPage.classList.add('campus-right');
+  campusPage.classList.add('campus-left');
+  questionsPage.classList.add('questions-middle');
 });
 
 /***/ })
