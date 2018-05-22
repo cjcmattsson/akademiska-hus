@@ -1,8 +1,9 @@
 .feed-nav-bar {
+  z-index: 100;
   position: fixed;
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 100vw;
   height: 40px;
   background-color: rgb(235, 235, 235);
   padding: 0 10%;
@@ -10,7 +11,6 @@
 
   .feed-nav-item {
     text-transform: uppercase;
-    text-decoration: none;
     color: grey;
     width: 33%;
     display: flex;
@@ -24,13 +24,39 @@
 }
 
 .news-feed {
-  height: auto;
+  height: 700px;
+  max-width: 100vw;
+  // padding: 60px 20px 30px;
+
+.aha, .campus, .q-and-a {
+  z-index: 0;
+  top: 80px;
+  position: absolute;
   width: 100vw;
-  padding: 60px 20px 30px;
+  height: 100%;
+}
+
+  .aha {
+    left: -100vw;
+    background-color: salmon;
+  }
+
+  .campus {
+    left: 0;
+    background-color: blue;
+  }
+
+  .q-and-a {
+    right: -100vw;
+    position: absolute;
+    background-color: black;
+  }
 
   p {
     margin: 0;
   }
+
+// Campus
 
   .one-news-item {
     display: flex;
@@ -70,4 +96,10 @@
       }
     }
   }
+
+  // AHA
+
+
+  // Q&A
+
 }

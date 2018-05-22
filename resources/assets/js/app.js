@@ -8,6 +8,7 @@
 require('./bootstrap');
 require('./campus');
 require('./side-menus');
+require('./feed-navbar');
 
 // if ('serviceWorker' in navigator) {
 //   window.addEventListener('load', function() {

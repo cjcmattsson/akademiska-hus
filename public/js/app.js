@@ -13694,6 +13694,7 @@ module.exports = __webpack_require__(38);
 __webpack_require__(12);
 __webpack_require__(36);
 __webpack_require__(37);
+__webpack_require__(45);
 
 // if ('serviceWorker' in navigator) {
 //   window.addEventListener('load', function() {
@@ -36021,6 +36022,29 @@ if (contact) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 39 */,
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */
+/***/ (function(module, exports) {
+
+var ahaNav = document.querySelector('.aha-nav');
+var campusNav = document.querySelector('.campus-nav');
+var questionsNav = document.querySelector('.questions-nav');
+
+var ahaPage = document.querySelector('.aha');
+var campusPage = document.querySelector('.campus');
+var questionsPage = document.querySelector('.q-and-a');
+
+ahaNav.addEventListener('click', function () {
+  ahaPage.style.left = "0";
+  campusPage.style.right = "-100vw";
+});
 
 /***/ })
 /******/ ]);
