@@ -809,3 +809,12 @@ body {
   border-radius: 50%;
 }
 
+.startpagebox {
+  width: 350px;
+  height: 350px;
+  background-color: green;
+  color: white;
+  margin: auto;
+  padding: 5%;
+}
+

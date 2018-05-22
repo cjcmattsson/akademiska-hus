@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('startpage', 'StartPageController@index');
 
 Route::get('/', 'CampusSelectionController@campusSelection')->name('select.campus');
 Route::post('/', 'CampusSelectionController@setCampusCookie')->name('store.campus');
