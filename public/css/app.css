@@ -334,6 +334,14 @@ body {
   border-bottom: 0.3px solid grey;
 }
 
+.campus-selection .search-content-wrapper .campuses-list .campus-list .campuses-in-city li input[type="radio"] {
+  display: none;
+}
+
+.campus-selection .search-content-wrapper .campuses-list .campus-list .campuses-in-city li input[type="radio"]:checked + label {
+  color: green;
+}
+
 .campus-selection .search-content-wrapper .campuses-list .campus-list .campus-display {
   display: block;
 }

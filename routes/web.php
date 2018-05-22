@@ -21,9 +21,6 @@ Route::post('felanmallan', 'CreateReportController@sendReport')->name('send.repo
 
 // Route to NEWSFEEDS
 Route::get('feed', 'FeedController@news')->name('feed')->middleware('campus');
-// Route::get('feed/campus', 'FeedController@news')->name('campus')->middleware('campus');
-// Route::get('feed/aha', 'FeedController@news')->name('aha')->middleware('campus');
-// Route::get('feed/questions', 'FeedController@news')->name('questions')->middleware('campus');
 
 // Route to chosen CAMPUS
 Route::get('campusinfo', 'CampusInfoController@index')->middleware('campus');
