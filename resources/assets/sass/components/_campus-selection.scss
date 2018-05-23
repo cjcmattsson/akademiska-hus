@@ -125,6 +125,18 @@
               padding: 2px;
               padding-right: 0;
               border-bottom: 0.3px solid grey;
+
+              input[type="radio"] {
+                display: none;
+              }
+
+              input[type="radio"]:checked + label {
+                color: green;
+              }
+
+              // .selected-campus {
+              //   background-color: green;
+              // }
             }
           }
           .campus-display {

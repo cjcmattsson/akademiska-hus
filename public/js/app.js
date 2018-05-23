@@ -35926,67 +35926,40 @@ module.exports = function spread(callback) {
 /***/ (function(module, exports) {
 
 var cities = document.querySelectorAll('.city');
-var campuses = document.querySelectorAll('.campus');
-// const iconAdd = document.querySelectorAll('.material-icons.add');
-// const iconRemove = document.querySelectorAll('.material-icons.remove');
 var selection = document.querySelector('.campus-selection');
-var topNav = document.querySelector('.navbar-top-bar');
 
 if (cities) {
-  cities.forEach(function (city) {
-    city.addEventListener('click', function () {
-      city.querySelector('.campuses-in-city').classList.toggle('campus-display');
-      city.querySelector("a .add").classList.toggle('hide-icon');
-      city.querySelector("a .remove").classList.toggle('show-icon');
+    cities.forEach(function (city) {
+        city.addEventListener('click', function () {
+            city.querySelector('.campuses-in-city').classList.toggle('campus-display');
+            city.querySelector("a .add").classList.toggle('hide-icon');
+            city.querySelector("a .remove").classList.toggle('show-icon');
+        });
     });
-  });
 }
-
-function setCampus(e) {
-  document.cookie = 'campus=' + e.target.textContent + '; expires=Thu, 18 Dec 2020 12:00:00 UTC';
-}
-
-if (campuses) {
-  campuses.forEach(function (campus) {
-    campus.addEventListener('click', setCampus);
-  });
-}
-
-// if (localStorage.campus) {
-//   selection.style.display = 'none';
-// }
-
 
 // Campus Search
 var search = document.querySelector(".input-field-search-campus");
 
 function filterCampuses() {
-  var i = void 0;
-  var a = void 0;
-  var filter = search.value.toUpperCase();
-  var ul = document.querySelector(".campus-list");
-  var li = ul.getElementsByTagName("li");
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
+    var i = void 0;
+    var a = void 0;
+    var filter = search.value.toUpperCase();
+    var ul = document.querySelector(".campus-list");
+    var li = ul.querySelectorAll('.city');
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
     }
-  }
 }
 
 if (search) {
-  search.addEventListener('keyup', filterCampuses);
+    search.addEventListener('keyup', filterCampuses);
 }
-
-function getCookie(name) {
-  var re = new RegExp(name + "=([^;]+)");
-  var value = re.exec(document.cookie);
-  return value != null ? unescape(value[1]) : null;
-}
-
-if (getCookie('campus')) {}
 
 /***/ }),
 /* 37 */
@@ -36029,10 +36002,33 @@ var ahaPage = document.querySelector('.aha');
 var campusPage = document.querySelector('.campus');
 var questionsPage = document.querySelector('.q-and-a');
 
-ahaNav.addEventListener('click', function () {
-  ahaPage.style.left = "0";
-  campusPage.style.right = "-100vw";
-});
+if (ahaNav) {
+  ahaNav.addEventListener('click', function () {
+    ahaPage.classList.remove('aha-left');
+    campusPage.classList.remove('campus-middle');
+    campusPage.classList.remove('campus-left');
+    campusPage.classList.add('campus-right');
+    questionsPage.classList.remove('questions-middle');
+  });
+}
+
+if (campusNav) {
+  campusNav.addEventListener('click', function () {
+    campusPage.classList.remove('campus-left');
+    campusPage.classList.remove('campus-right');
+    ahaPage.classList.add('aha-left');
+    campusPage.classList.add('campus-middle');
+    questionsPage.classList.remove('questions-middle');
+  });
+}
+
+if (questionsNav) {
+  questionsNav.addEventListener('click', function () {
+    campusPage.classList.add('campus-right');
+    campusPage.classList.add('campus-left');
+    questionsPage.classList.add('questions-middle');
+  });
+}
 
 /***/ }),
 /* 39 */

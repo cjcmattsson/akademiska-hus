@@ -22,6 +22,7 @@ body {
 
 .navbar-bot,
 .navbar-top-bar {
+  max-width: 100vw;
   background-color: #6FBC4D;
   color: white;
 }
@@ -333,6 +334,14 @@ body {
   border-bottom: 0.3px solid grey;
 }
 
+.campus-selection .search-content-wrapper .campuses-list .campus-list .campuses-in-city li input[type="radio"] {
+  display: none;
+}
+
+.campus-selection .search-content-wrapper .campuses-list .campus-list .campuses-in-city li input[type="radio"]:checked + label {
+  color: green;
+}
+
 .campus-selection .search-content-wrapper .campuses-list .campus-list .campus-display {
   display: block;
 }
@@ -348,7 +357,6 @@ body {
   z-index: 0 !important;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  z-index: 100;
 }
 
 .settings-side-menu {
@@ -541,46 +549,60 @@ body {
           align-items: center;
 }
 
-.feed-nav-bar .feed-nav-item:nth-child(2) {
+.feed-nav-bar .feed-nav-item:nth-child(1) {
   border-bottom: 4px solid #6FBC4D;
 }
 
-.news-feed {
-  height: 700px;
-  max-width: 100vw;
-}
-
-.news-feed .aha,
-.news-feed .campus,
-.news-feed .q-and-a {
-  z-index: 0;
-  top: 80px;
+.content-feed {
   position: absolute;
-  width: 100vw;
-  height: 100%;
-}
-
-.news-feed .aha {
-  left: -100vw;
-  background-color: salmon;
-}
-
-.news-feed .campus {
+  top: 0;
   left: 0;
-  background-color: blue;
+  width: 100vw;
+  height: 100vh;
 }
 
-.news-feed .q-and-a {
-  right: -100vw;
+.content-feed .news-feed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.content-feed .news-feed .aha,
+.content-feed .news-feed .campus,
+.content-feed .news-feed .q-and-a {
+  padding: 120px 15px 80px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  z-index: 0;
   position: absolute;
-  background-color: black;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
-.news-feed p {
-  margin: 0;
+.content-feed .news-feed .aha {
+  background-color: green;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
-.news-feed .one-news-item {
+.content-feed .news-feed .q-and-a {
+  background-color: yellow;
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+}
+
+.content-feed .news-feed .campus {
+  background-color: blue;
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+}
+
+.content-feed .news-feed .campus .one-news-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -594,14 +616,14 @@ body {
   margin-bottom: 10px;
 }
 
-.news-feed .one-news-item .news-image {
+.content-feed .news-feed .campus .one-news-item .news-image {
   height: 100%;
   min-width: 120px;
   width: 120px;
   background-color: grey;
 }
 
-.news-feed .one-news-item .news-text {
+.content-feed .news-feed .campus .one-news-item .news-text {
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -614,7 +636,7 @@ body {
   width: 100%;
 }
 
-.news-feed .one-news-item .news-text .city-and-date {
+.content-feed .news-feed .campus .one-news-item .news-text .city-and-date {
   font-style: italic;
   height: 20%;
   display: -webkit-box;
@@ -629,7 +651,7 @@ body {
           justify-content: space-between;
 }
 
-.news-feed .one-news-item .news-text .news-main-content-text-short {
+.content-feed .news-feed .campus .one-news-item .news-text .news-main-content-text-short {
   height: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -638,6 +660,45 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 15px;
+}
+
+.content-feed .news-feed .aha-middle {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.content-feed .news-feed .campus-right {
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+}
+
+.content-feed .news-feed .questions-right {
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+}
+
+.content-feed .news-feed .campus-middle {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.content-feed .news-feed .aha-left {
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+}
+
+.content-feed .news-feed .campus-left {
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+}
+
+.content-feed .news-feed .questions-middle {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.content-feed .news-feed p {
+  margin: 0;
 }
 
 .report-first-page {

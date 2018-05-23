@@ -22,8 +22,8 @@
             <ul class="campuses-in-city">
           @foreach ($city->campuses as $campus)
             <li>
-              <input type="radio" name="campus" value="{{$campus->name}}">
-              {{-- <a class="campus" href="{{url('feed')}}">{{$campus->name}}</a> --}}
+              <input class="radio" type="radio" name="campus" value="{{$campus->name}}" id="{{$campus->name}}">
+              <label class="radioLabel" for="{{$campus->name}}">{{$campus->name}}</label>
               <i class="material-icons">keyboard_arrow_right</i></li>
           @endforeach
             </ul>
