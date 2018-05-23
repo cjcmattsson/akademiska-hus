@@ -701,16 +701,309 @@ body {
   margin: 0;
 }
 
+.report-wrapper {
+  padding-top: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.report-wrapper .report-first-page,
+.report-wrapper .report-second-page {
+  padding: 60px 0 70px;
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+}
+
+.report-header {
+  padding: 0 25px;
+  padding-top: 15px;
+  color: black;
+  font-family: "times", serif;
+}
+
+.report-header h1 {
+  margin: 10px 0 0;
+  font-family: "times", serif;
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.report-header p {
+  margin: 0;
+}
+
+.report-header.first {
+  position: absolute;
+}
+
+.report-second-page {
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+}
+
+.report-second-page .buttons {
+  padding: 0 25px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.report-second-page .buttons .go-back,
+.report-second-page .buttons .send-report {
+  text-transform: uppercase;
+  font-size: 16px;
+  height: 48px;
+  border-radius: 20px 20px;
+  border: 1px solid #F71264;
+}
+
+.report-second-page .buttons .go-back:focus,
+.report-second-page .buttons .send-report:focus {
+  outline: none;
+}
+
+.report-second-page .buttons .go-back {
+  width: 42%;
+  background-color: white;
+  color: #F71264;
+}
+
+.report-second-page .buttons .send-report {
+  width: 53%;
+  background-color: #F71264;
+  color: white;
+  -webkit-box-shadow: 0px 3px 10px 0px #9e9e9e;
+  box-shadow: 0px 3px 10px 0px #9e9e9e;
+}
+
+.report-second-page .describe-problem {
+  padding: 10px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.report-second-page .describe-problem h2 {
+  text-transform: uppercase;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 16px;
+  margin: 10px 0 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.report-second-page .describe-problem p {
+  margin: 5px 0;
+  color: grey;
+  font-size: 12px;
+}
+
+.report-second-page .describe-problem .describe-field {
+  font-size: 15px;
+  background-color: #F4F5F7;
+  font-weight: lighter;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  height: 110px;
+  width: 100%;
+}
+
+.report-second-page .describe-problem .describe-field::-webkit-input-placeholder {
+  color: grey;
+  font-size: 12px;
+}
+
+.report-second-page .describe-problem .describe-field:-ms-input-placeholder {
+  color: grey;
+  font-size: 12px;
+}
+
+.report-second-page .describe-problem .describe-field::-ms-input-placeholder {
+  color: grey;
+  font-size: 12px;
+}
+
+.report-second-page .describe-problem .describe-field::placeholder {
+  color: grey;
+  font-size: 12px;
+}
+
+.report-second-page .describe-problem .describe-field:focus {
+  outline: none;
+}
+
+.report-second-page .take-or-select-image {
+  width: 100%;
+  padding: 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.report-second-page .take-or-select-image .take-image,
+.report-second-page .take-or-select-image .select-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  border: 1px solid black;
+  height: 50px;
+  width: 48%;
+}
+
+.report-second-page .take-or-select-image .take-image .material-icons,
+.report-second-page .take-or-select-image .select-image .material-icons {
+  margin-right: 5px;
+}
+
+.report-second-page .personal-info {
+  width: 100%;
+  height: auto;
+  padding: 15px 25px 0;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.report-second-page .personal-info p {
+  margin: 10px 0 5px;
+}
+
+.report-second-page .personal-info .input-and-check {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.report-second-page .personal-info .input-and-check .material-icons.check-input {
+  margin-right: 10%;
+  font-size: 35px;
+  color: #6FBC4D;
+}
+
+.report-second-page .personal-info .input-and-check input {
+  font-size: 15px;
+  background-color: #F4F5F7;
+  font-weight: lighter;
+  color: grey;
+  border: none;
+  padding-left: 15px;
+  height: 45px;
+  width: 70%;
+  padding-right: 15px;
+}
+
+.report-second-page .personal-info .input-and-check input::-webkit-input-placeholder {
+  color: grey;
+  font-size: 12px;
+}
+
+.report-second-page .personal-info .input-and-check input:-ms-input-placeholder {
+  color: grey;
+  font-size: 12px;
+}
+
+.report-second-page .personal-info .input-and-check input::-ms-input-placeholder {
+  color: grey;
+  font-size: 12px;
+}
+
+.report-second-page .personal-info .input-and-check input::placeholder {
+  color: grey;
+  font-size: 12px;
+}
+
+.show-second {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.hide-first {
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+}
+
 .report-first-page {
   height: auto;
+  overflow-y: scroll;
+}
+
+.report-first-page #map {
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  padding: 0;
 }
 
 .report-first-page .report-map {
-  padding: 0 25px;
   height: 200px;
   width: 100%;
-  background: url("http://unsplash.it/1200x800") center center no-repeat;
-  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -719,26 +1012,9 @@ body {
           align-items: flex-start;
 }
 
-.report-first-page .report-map .report-header {
-  padding-top: 15px;
-  color: white;
-  font-family: "times", serif;
-}
-
-.report-first-page .report-map .report-header h1 {
-  margin: 10px 0 0;
-  font-family: "times", serif;
-  font-size: 28px;
-  font-weight: normal;
-}
-
-.report-first-page .report-map .report-header p {
-  margin: 0;
-}
-
 .report-first-page .search-building {
   padding: 10px 25px;
-  height: 110px;
+  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -813,8 +1089,8 @@ body {
   padding: 0 25px;
   width: 100%;
   height: auto;
-  min-height: 80px;
-  border-top: 1px solid black;
+  min-height: 70px;
+  border-top: 1px solid #a8a8a8;
 }
 
 .report-first-page .building-list .building .name-and-adress {
@@ -828,16 +1104,19 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 70%;
+  width: 100%;
   height: 100%;
+  margin: 5px 0;
 }
 
 .report-first-page .building-list .building .name-and-adress .building-name {
   margin: 0;
+  margin-bottom: 8px;
 }
 
 .report-first-page .building-list .building .name-and-adress .building-adress-and-code {
   font-size: 12px;
+  color: #a8a8a8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -868,5 +1147,9 @@ body {
   width: 25px;
   height: 25px;
   border-radius: 50%;
+}
+
+.report-first-page .building-list .building .select-building button:focus {
+  outline: none;
 }
 
