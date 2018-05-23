@@ -11,22 +11,25 @@ buildings.forEach(building => {
 
 const backButton = document.querySelector('.go-back');
 
-backButton.addEventListener('click', () => {
-  reportFirst.classList.remove('hide-first');
-  reportSecond.classList.remove('show-second');
-})
+if (backButton) {
+  backButton.addEventListener('click', () => {
+    reportFirst.classList.remove('hide-first');
+    reportSecond.classList.remove('show-second');
+  })
+}
 
 
 const inputs = document.querySelectorAll('.input-and-check input');
 const checkMarks = document.querySelector('.check-input');
-
-inputs.forEach(input => {
-  input.addEventListener('keyup', () => {
-    if (input.value) {
-      input.nextSibling.nextSibling.style.display = 'block';
-    }
-    if (!input.value) {
-      input.nextSibling.nextSibling.style.display = 'none';
-    }
+if (inputs) {
+  inputs.forEach(input => {
+    input.addEventListener('keyup', () => {
+      if (input.value) {
+        input.nextSibling.nextSibling.style.display = 'block';
+      }
+      if (!input.value) {
+        input.nextSibling.nextSibling.style.display = 'none';
+      }
+    })
   })
-})
+}
