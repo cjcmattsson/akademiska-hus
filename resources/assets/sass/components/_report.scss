@@ -169,6 +169,7 @@
           margin-right: 10%;
           font-size: 35px;
           color: $main-green;
+          display: none;
         }
 
         input {
@@ -185,6 +186,10 @@
         input::placeholder {
           color: grey;
           font-size: 12px;
+        }
+
+        input:focus {
+          outline-color: $button-purple;
         }
       }
     }

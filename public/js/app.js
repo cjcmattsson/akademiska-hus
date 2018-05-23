@@ -36072,5 +36072,19 @@ backButton.addEventListener('click', function () {
   reportSecond.classList.remove('show-second');
 });
 
+var inputs = document.querySelectorAll('.input-and-check input');
+var checkMarks = document.querySelector('.check-input');
+
+inputs.forEach(function (input) {
+  input.addEventListener('keyup', function () {
+    if (input.value) {
+      input.nextSibling.nextSibling.style.display = 'block';
+    }
+    if (!input.value) {
+      input.nextSibling.nextSibling.style.display = 'none';
+    }
+  });
+});
+
 /***/ })
 /******/ ]);

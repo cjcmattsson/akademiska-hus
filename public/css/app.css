@@ -945,6 +945,7 @@ body {
   margin-right: 10%;
   font-size: 35px;
   color: #6FBC4D;
+  display: none;
 }
 
 .report-second-page .personal-info .input-and-check input {
@@ -977,6 +978,10 @@ body {
 .report-second-page .personal-info .input-and-check input::placeholder {
   color: grey;
   font-size: 12px;
+}
+
+.report-second-page .personal-info .input-and-check input:focus {
+  outline-color: #F71264;
 }
 
 .show-second {
