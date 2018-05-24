@@ -880,12 +880,16 @@ body {
 }
 
 .expander-box {
-  background-color: blue;
+  border-bottom: 1px solid grey;
+}
+
+.expander-box > h3 {
+  max-width: 90%;
 }
 
 .answer-box {
-  background-color: lightblue;
   list-style: none;
   display: none;
+  padding-bottom: 3vh;
 }
 

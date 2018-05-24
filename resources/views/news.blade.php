@@ -178,7 +178,10 @@
           <ul class="expander-box">
             <h3>Hur bestäms hyresnivåerna på era lokaler?</h3>
             <li class="answer-box">
-              <p>Dummy answer text text text text.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Integer laoreet convallis eros sed sollicitudin. Etiam massa lorem,
+                lacinia sit amet lorem sit amet, sollicitudin porta nulla.
+              </p>
             </li>
           </ul>
       </div>
