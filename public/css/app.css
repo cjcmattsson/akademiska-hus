@@ -884,12 +884,13 @@ body {
 }
 
 .expander-box > h3 {
-  max-width: 90%;
+  max-width: 80vw;
 }
 
 .answer-box {
   list-style: none;
   display: none;
   padding-bottom: 3vh;
+  max-width: 74vw;
 }
 
