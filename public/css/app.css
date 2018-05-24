@@ -591,7 +591,7 @@ body {
 }
 
 .content-feed .news-feed .q-and-a {
-  background-color: yellow;
+  background-color: white;
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
 }
@@ -877,5 +877,15 @@ body {
   color: white;
   margin: auto;
   padding: 5%;
+}
+
+.expander-box {
+  background-color: blue;
+}
+
+.answer-box {
+  background-color: lightblue;
+  list-style: none;
+  display: none;
 }
 

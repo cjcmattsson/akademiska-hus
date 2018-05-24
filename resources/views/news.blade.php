@@ -167,8 +167,22 @@
       </div>
     </div>
   </div>
-    <div class="q-and-a">Q&A</div>
+      <div class="q-and-a">
+          <ul class="expander-box">
+            <h3>Hur jobbar ni för att minska energiförbrukningen?</h3>
+            <li class="answer-box">
+              <p>Dummy answer text text text text.</p>
+            </li>
+          </ul>
 
+          <ul class="expander-box">
+            <h3>Hur bestäms hyresnivåerna på era lokaler?</h3>
+            <li class="answer-box">
+              <p>Dummy answer text text text text.</p>
+            </li>
+          </ul>
+      </div>
+    </div>
   </div>
 </div>
 @stop
