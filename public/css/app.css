@@ -16,6 +16,12 @@ body {
   padding: 0;
 }
 
+a:focus,
+a:active,
+a:target {
+  color: inherit;
+}
+
 body {
   padding-top: 60px !important;
 }
@@ -510,6 +516,23 @@ body {
   font-size: 50px !important;
 }
 
+.campus-info-and-contact .info-contact-buttons .button-and-text .happening-notification:after {
+  content: '!';
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  background: #F71264;
+  color: white;
+  width: 18px;
+  height: 18px;
+  font-size: 13px;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(149, 149, 149, 0.75);
+  box-shadow: 0px 0px 1px 1px rgba(149, 149, 149, 0.75);
+}
+
 @media (min-width: 370px) {
   .campus-info-and-contact .info-contact-buttons .button-and-text .button {
     height: auto;
@@ -531,7 +554,6 @@ body {
   height: 40px;
   background-color: #ebebeb;
   padding: 0 10%;
-  border-bottom: 1px solid grey;
 }
 
 .feed-nav-bar .feed-nav-item {
@@ -585,7 +607,7 @@ body {
 }
 
 .content-feed .news-feed .aha {
-  background-color: green;
+  background-color: white;
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
@@ -981,7 +1003,7 @@ body {
 }
 
 .report-second-page .personal-info .input-and-check input:focus {
-  outline-color: #F71264;
+  outline: none;
 }
 
 .show-second {
@@ -1015,6 +1037,30 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.report-first-page .report-map .enlarge-map {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  background-color: #6FBC4D;
+  position: absolute;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  right: 0;
+  margin-right: 20px;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
 }
 
 .report-first-page .search-building {
@@ -1156,5 +1202,180 @@ body {
 
 .report-first-page .building-list .building .select-building button:focus {
   outline: none;
+}
+
+.aha-feed-item {
+  background-image: url("http://unsplash.it/1200x800");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 240px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0px 2px 5px 0px #999999;
+  box-shadow: 0px 2px 5px 0px #999999;
+}
+
+.aha-feed-item .feed-item-text-and-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: auto;
+  min-height: 80px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.aha-feed-item .feed-item-text-and-button .text {
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aha-feed-item .feed-item-text-and-button .text h3 {
+  margin: 0;
+}
+
+.aha-feed-item .feed-item-text-and-button button {
+  color: white;
+  font-size: 15px;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 13px;
+  background-color: #F71264;
+  border: none;
+}
+
+.aha-feed-item-smaller {
+  height: 160px;
+  margin-bottom: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.aha-feed-item-smaller .image {
+  background-image: url("http://unsplash.it/1200x800");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100%;
+  width: 40%;
+}
+
+.aha-feed-item-smaller .text-right {
+  background-color: #dbf4f7;
+  padding: 15px 15px 5px;
+  height: 100%;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aha-feed-item-smaller .text-right .top-text {
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 1px solid black;
+}
+
+.aha-feed-item-smaller .text-right .top-text p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.aha-feed-item-smaller .text-right .top-text h3 {
+  font-family: "times", serif;
+  font-size: 22px;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.aha-feed-item-smaller .text-right .bot-text-and-button {
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aha-feed-item-smaller .text-right .bot-text-and-button p {
+  width: 70%;
+  font-size: 9px;
+}
+
+.aha-feed-item-smaller .text-right .bot-text-and-button button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #F71264;
+  border: none;
 }
 

@@ -13,6 +13,7 @@
       <h1>Felanmälan - Sök byggnad</h1>
       <p>Steg 1 av 2</p>
     </div>
+    <div class="enlarge-map"><i class="material-icons">open_with</i></div>
   </div>
 
   <div class="search-building">

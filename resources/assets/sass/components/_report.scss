@@ -189,7 +189,7 @@
         }
 
         input:focus {
-          outline-color: $button-purple;
+          outline: none;
         }
       }
     }
@@ -218,6 +218,21 @@
     display: flex;
     align-items: flex-start;
 
+    .enlarge-map {
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 37px;
+      height: 37px;
+      border-radius: 50%;
+      background-color: $main-green;
+      position: absolute;
+      align-self: flex-end;
+      right: 0;
+      margin-right: 20px;
+      transform: translateY(-15px);
+    }
 
 }
   .search-building {

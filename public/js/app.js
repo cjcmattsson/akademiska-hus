@@ -13677,7 +13677,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(11);
-module.exports = __webpack_require__(39);
+module.exports = __webpack_require__(41);
 
 
 /***/ }),
@@ -13695,8 +13695,8 @@ __webpack_require__(12);
 __webpack_require__(36);
 __webpack_require__(37);
 __webpack_require__(38);
-__webpack_require__(46);
-__webpack_require__(47);
+__webpack_require__(39);
+__webpack_require__(40);
 
 // if ('serviceWorker' in navigator) {
 //   window.addEventListener('load', function() {
@@ -36036,22 +36036,10 @@ if (questionsNav) {
 /* 39 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */
-/***/ (function(module, exports) {
-
 
 
 /***/ }),
-/* 47 */
+/* 40 */
 /***/ (function(module, exports) {
 
 var buildings = document.querySelectorAll('.building');
@@ -36088,6 +36076,12 @@ if (inputs) {
     });
   });
 }
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
