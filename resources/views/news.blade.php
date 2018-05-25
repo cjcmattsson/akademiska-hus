@@ -9,6 +9,8 @@
 
 <div class="content-feed">
   <div class="news-feed">
+
+    {{-- AHA FEED --}}
     <div class="aha">
       <div class="aha-feed-item">
         <div class="feed-item-text-and-button">
@@ -18,7 +20,7 @@
           <button type="button" name="button">Läs mer</button>
         </div>
       </div>
-      <div class="aha-feed-item-smaller">
+      <div class="feed-item-smaller">
         <div class="image"></div>
         <div class="text-right">
           <div class="top-text">
@@ -47,7 +49,7 @@
           <button type="button" name="button">Läs mer</button>
         </div>
       </div>
-      <div class="aha-feed-item-smaller">
+      <div class="feed-item-smaller">
         <div class="image"></div>
         <div class="text-right">
           <div class="top-text">
@@ -61,164 +63,90 @@
         </div>
       </div>
     </div>
-    
-    <div class="campus"><div class="one-news-item">
-      <div class="news-image"></div>
-      <div class="news-text">
-        <div class="city-and-date">
-          <p class="news-city">Göteborg</p>
-          <p class="news-date">5/12-2016</p>
-        </div>
-        <div class="news-main-content-text-short">
-          <p>Massa glada studenter gör orimliga saker</p>
-        </div>
-      </div>
-    </div><div class="one-news-item">
-      <div class="news-image"></div>
-      <div class="news-text">
-        <div class="city-and-date">
-          <p class="news-city">Göteborg</p>
-          <p class="news-date">5/12-2016</p>
-        </div>
-        <div class="news-main-content-text-short">
-          <p>Massa glada studenter gör orimliga saker</p>
+
+    {{-- CAMPUS FEED --}}
+    <div class="campus">
+      <div class="feed-item-smaller">
+        <div class="image"></div>
+        <div class="text-right">
+          <div class="top-text">
+            <p>Rum för lärande</p>
+            <h3>Vi behöver fler relaxytor i våra miljöer</h3>
+          </div>
+          <div class="bot-text-and-button">
+            <p>Katarina Blasson, docent i Bla & bla</p>
+            <button type="button" name="button"><i class="material-icons">keyboard_arrow_right</i></button>
+          </div>
         </div>
       </div>
-    </div><div class="one-news-item">
-      <div class="news-image"></div>
-      <div class="news-text">
-        <div class="city-and-date">
-          <p class="news-city">Göteborg</p>
-          <p class="news-date">5/12-2016</p>
-        </div>
-        <div class="news-main-content-text-short">
-          <p>Massa glada studenter gör orimliga saker</p>
-        </div>
-      </div>
-    </div><div class="one-news-item">
-      <div class="news-image"></div>
-      <div class="news-text">
-        <div class="city-and-date">
-          <p class="news-city">Göteborg</p>
-          <p class="news-date">5/12-2016</p>
-        </div>
-        <div class="news-main-content-text-short">
-          <p>Massa glada studenter gör orimliga saker</p>
+      <div class="feed-item-smaller">
+        <div class="image"></div>
+        <div class="text-right">
+          <div class="top-text">
+            <p>Rum för lärande</p>
+            <h3>Vi behöver fler relaxytor i våra miljöer</h3>
+          </div>
+          <div class="bot-text-and-button">
+            <p>Katarina Blasson, docent i Bla & bla</p>
+            <button type="button" name="button"><i class="material-icons">keyboard_arrow_right</i></button>
+          </div>
         </div>
       </div>
-    </div><div class="one-news-item">
-      <div class="news-image"></div>
-      <div class="news-text">
-        <div class="city-and-date">
-          <p class="news-city">Göteborg</p>
-          <p class="news-date">5/12-2016</p>
-        </div>
-        <div class="news-main-content-text-short">
-          <p>Massa glada studenter gör orimliga saker</p>
-        </div>
-      </div>
-    </div><div class="one-news-item">
-      <div class="news-image"></div>
-      <div class="news-text">
-        <div class="city-and-date">
-          <p class="news-city">Göteborg</p>
-          <p class="news-date">5/12-2016</p>
-        </div>
-        <div class="news-main-content-text-short">
-          <p>Massa glada studenter gör orimliga saker</p>
+      <div class="feed-item-smaller">
+        <div class="image"></div>
+        <div class="text-right">
+          <div class="top-text">
+            <p>Rum för lärande</p>
+            <h3>Vi behöver fler relaxytor i våra miljöer</h3>
+          </div>
+          <div class="bot-text-and-button">
+            <p>Katarina Blasson, docent i Bla & bla</p>
+            <button type="button" name="button"><i class="material-icons">keyboard_arrow_right</i></button>
+          </div>
         </div>
       </div>
-    </div><div class="one-news-item">
-      <div class="news-image"></div>
-      <div class="news-text">
-        <div class="city-and-date">
-          <p class="news-city">Göteborg</p>
-          <p class="news-date">5/12-2016</p>
-        </div>
-        <div class="news-main-content-text-short">
-          <p>Massa glada studenter gör orimliga saker</p>
-        </div>
-      </div>
-    </div>
-    <div class="one-news-item">
-      <div class="news-image"></div>
-      <div class="news-text">
-        <div class="city-and-date">
-          <p class="news-city">Göteborg</p>
-          <p class="news-date">5/12-2016</p>
-        </div>
-        <div class="news-main-content-text-short">
-          <p>Massa glada studenter gör orimliga saker</p>
+      <div class="feed-item-smaller">
+        <div class="image"></div>
+        <div class="text-right">
+          <div class="top-text">
+            <p>Rum för lärande</p>
+            <h3>Vi behöver fler relaxytor i våra miljöer</h3>
+          </div>
+          <div class="bot-text-and-button">
+            <p>Katarina Blasson, docent i Bla & bla</p>
+            <button type="button" name="button"><i class="material-icons">keyboard_arrow_right</i></button>
+          </div>
         </div>
       </div>
-    </div><div class="one-news-item">
-      <div class="news-image"></div>
-      <div class="news-text">
-        <div class="city-and-date">
-          <p class="news-city">Göteborg</p>
-          <p class="news-date">5/12-2016</p>
-        </div>
-        <div class="news-main-content-text-short">
-          <p>Massa glada studenter gör orimliga saker</p>
-        </div>
-      </div>
-    </div><div class="one-news-item">
-      <div class="news-image"></div>
-      <div class="news-text">
-        <div class="city-and-date">
-          <p class="news-city">Göteborg</p>
-          <p class="news-date">5/12-2016</p>
-        </div>
-        <div class="news-main-content-text-short">
-          <p>Massa glada studenter gör orimliga saker</p>
+      <div class="feed-item-smaller">
+        <div class="image"></div>
+        <div class="text-right">
+          <div class="top-text">
+            <p>Rum för lärande</p>
+            <h3>Vi behöver fler relaxytor i våra miljöer</h3>
+          </div>
+          <div class="bot-text-and-button">
+            <p>Katarina Blasson, docent i Bla & bla</p>
+            <button type="button" name="button"><i class="material-icons">keyboard_arrow_right</i></button>
+          </div>
         </div>
       </div>
-    </div><div class="one-news-item">
-      <div class="news-image"></div>
-      <div class="news-text">
-        <div class="city-and-date">
-          <p class="news-city">Göteborg</p>
-          <p class="news-date">5/12-2016</p>
-        </div>
-        <div class="news-main-content-text-short">
-          <p>Massa glada studenter gör orimliga saker</p>
-        </div>
-      </div>
-    </div><div class="one-news-item">
-      <div class="news-image"></div>
-      <div class="news-text">
-        <div class="city-and-date">
-          <p class="news-city">Göteborg</p>
-          <p class="news-date">5/12-2016</p>
-        </div>
-        <div class="news-main-content-text-short">
-          <p>Massa glada studenter gör orimliga saker</p>
+      <div class="feed-item-smaller">
+        <div class="image"></div>
+        <div class="text-right">
+          <div class="top-text">
+            <p>Rum för lärande</p>
+            <h3>Vi behöver fler relaxytor i våra miljöer</h3>
+          </div>
+          <div class="bot-text-and-button">
+            <p>Katarina Blasson, docent i Bla & bla</p>
+            <button type="button" name="button"><i class="material-icons">keyboard_arrow_right</i></button>
+          </div>
         </div>
       </div>
-    </div><div class="one-news-item">
-      <div class="news-image"></div>
-      <div class="news-text">
-        <div class="city-and-date">
-          <p class="news-city">Göteborg</p>
-          <p class="news-date">5/12-2016</p>
-        </div>
-        <div class="news-main-content-text-short">
-          <p>Massa glada studenter gör orimliga saker</p>
-        </div>
-      </div>
-    </div><div class="one-news-item">
-      <div class="news-image"></div>
-      <div class="news-text">
-        <div class="city-and-date">
-          <p class="news-city">Göteborg</p>
-          <p class="news-date">5/12-2016</p>
-        </div>
-        <div class="news-main-content-text-short">
-          <p>Massa glada studenter gör orimliga saker</p>
-        </div>
-      </div>
-    </div>
   </div>
+
+
       <div class="q-and-a">
           <ul class="expander-box">
             <h3>Hur jobbar ni för att minska energiförbrukningen?</h3>
