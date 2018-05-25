@@ -1,5 +1,5 @@
 .feed-nav-bar {
-  z-index: 100;
+  z-index: 5;
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -7,7 +7,6 @@
   height: 40px;
   background-color: rgb(235, 235, 235);
   padding: 0 10%;
-  border-bottom: 1px solid grey;
 
   .feed-nav-item {
     text-transform: uppercase;
@@ -53,7 +52,7 @@
 }
 
   .aha {
-    background-color: green;
+    background-color: white;
     transform: translateX(0);
   }
 
