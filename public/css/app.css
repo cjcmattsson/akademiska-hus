@@ -616,7 +616,7 @@ body {
 }
 
 .content-feed .news-feed .q-and-a {
-  background-color: yellow;
+  background-color: white;
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
 }
@@ -1382,3 +1382,25 @@ body {
   border: none;
 }
 
+.startpagebox {
+  width: 350px;
+  height: 350px;
+  background-color: green;
+  color: white;
+  margin: auto;
+  padding: 5%;
+}
+
+.expander-box {
+  border-bottom: 1px solid grey;
+}
+
+.expander-box > h3 {
+  max-width: 80vw;
+}
+
+.answer-box {
+  list-style: none;
+  display: none;
+  padding-bottom: 3vh;
+  max-width: 74vw;

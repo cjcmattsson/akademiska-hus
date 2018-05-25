@@ -11,6 +11,7 @@ require('./side-menus');
 require('./feed-navbar');
 require('./map');
 require('./report');
+require('./q-and-a');
 
 // if ('serviceWorker' in navigator) {
 //   window.addEventListener('load', function() {
