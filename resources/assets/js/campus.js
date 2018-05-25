@@ -1,9 +1,5 @@
 const cities = document.querySelectorAll('.city');
-const campuses = document.querySelectorAll('.campus');
-// const iconAdd = document.querySelectorAll('.material-icons.add');
-// const iconRemove = document.querySelectorAll('.material-icons.remove');
 const selection = document.querySelector('.campus-selection');
-const topNav = document.querySelector('.navbar-top-bar');
 
 if (cities) {
   cities.forEach((city) => {
@@ -11,27 +7,9 @@ if (cities) {
       city.querySelector('.campuses-in-city').classList.toggle('campus-display');
       city.querySelector("a .add").classList.toggle('hide-icon');
       city.querySelector("a .remove").classList.toggle('show-icon');
-
       })
     })
 }
-
-
-function setCampus(e) {
-    document.cookie = `campus=${e.target.textContent}; expires=Thu, 18 Dec 2020 12:00:00 UTC`;
-}
-
-if (campuses) {
-  campuses.forEach((campus) => {
-    campus.addEventListener('click', setCampus);
-  })
-}
-
-
-// if (localStorage.campus) {
-//   selection.style.display = 'none';
-// }
-
 
 // Campus Search
 const search = document.querySelector(".input-field-search-campus");
@@ -41,7 +19,7 @@ function filterCampuses() {
     let a;
     const filter = search.value.toUpperCase();
     const ul = document.querySelector(".campus-list");
-    const li = ul.getElementsByTagName("li");
+    const li = ul.querySelectorAll('.city');
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("a")[0];
         if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
@@ -55,15 +33,4 @@ function filterCampuses() {
 
 if (search) {
   search.addEventListener('keyup', filterCampuses);
-}
-
-function getCookie(name)
-  {
-    var re = new RegExp(name + "=([^;]+)");
-    var value = re.exec(document.cookie);
-    return (value != null) ? unescape(value[1]) : null;
-  }
-
-if (getCookie('campus')) {
-
 }

@@ -14,7 +14,7 @@ class CampusSelectionController extends Controller
   public function setCampusCookie()
   {
     Cookie::queue(Cookie::forever('campus', request()->get('campus')));
-    return view('feed');
+    return view('news');
   }
 
 

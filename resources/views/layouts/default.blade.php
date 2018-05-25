@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   {{-- <link rel="manifest" href="{{ asset('manifest.json') }}"> --}}
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/css/swiper.min.css"> --}}
   <title>Campuskollen</title>
 </head>
 <body>

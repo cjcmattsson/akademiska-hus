@@ -6,6 +6,7 @@ body {
 }
 
 .navbar-bot, .navbar-top-bar {
+  max-width: 100vw;
    background-color: $main-green;
    color: white;
  }

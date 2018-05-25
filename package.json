@@ -19,5 +19,8 @@
         "popper.js": "^1.12",
         "sw-precache-webpack-plugin": "^0.11.5",
         "vue": "^2.5.7"
+    },
+    "dependencies": {
+        "swiper": "^4.2.6"
     }
 }
