@@ -1,0 +1,144 @@
+.feed-nav-bar {
+  z-index: 5;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 40px;
+  background-color: rgb(235, 235, 235);
+  padding: 0 10%;
+
+  .feed-nav-item {
+    text-transform: uppercase;
+    color: grey;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .feed-nav-item:nth-child(1) {
+    border-bottom: 4px solid $main-green;
+  }
+
+}
+
+.content-feed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+
+.news-feed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+
+.aha, .campus, .q-and-a {
+  padding: 120px 15px 80px;
+  transition: all 0.4s ease;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+  .aha {
+    background-color: white;
+    transform: translateX(0);
+  }
+
+  .q-and-a {
+    background-color: white;
+    transform: translateX(100vw);
+  }
+
+  .campus {
+    background-color: blue;
+    transform: translateX(100vw);
+
+    .one-news-item {
+      display: flex;
+      flex-direction: row;
+      height: 120px;
+      width: 100%;
+      border: 1px solid black;
+      margin-bottom: 10px;
+
+      .news-image {
+        height: 100%;
+        min-width: 120px;
+        width: 120px;
+        background-color: grey;
+      }
+
+      .news-text {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+
+        .city-and-date {
+          font-style: italic;
+          height: 20%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        .news-main-content-text-short {
+          height: 80%;
+          display: flex;
+          align-items: center;
+          font-size: $paragraphFontSize;
+        }
+      }
+    }
+  }
+
+
+
+// AHA MIDDLE
+  .aha-middle {
+    transform: translateX(0);
+  }
+  .campus-right{
+    transform: translateX(100vw);
+  }
+  .questions-right{
+    transform: translateX(100vw);
+  }
+
+// CAMPUS MIDDLE
+  .campus-middle {
+    transform: translateX(0);
+  }
+  .aha-left {
+    transform: translateX(-100vw);
+  }
+
+// Q&A MIDDLE
+
+  .campus-left {
+    transform: translateX(-100vw);
+  }
+
+  .questions-middle {
+    transform: translateX(0);
+  }
+
+  p {
+    margin: 0;
+  }
+
+  }
+}
