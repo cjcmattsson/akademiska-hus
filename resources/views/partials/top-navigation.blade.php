@@ -32,7 +32,7 @@ use Illuminate\Support\Facades\Auth;
                   <h2>Kontakt</h2>
                 </div>
                   <div class="campus-section">
-                    <h2>{{$campus->name}}</h2>
+                    {{-- <h2>{{$campus->name}}</h2> --}}
                     <p>Data from database</p>
                     <p>Data from database</p>
                     <p>Data from database</p>

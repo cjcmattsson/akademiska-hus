@@ -79,6 +79,8 @@
     </div>
   </div>
 
+<form class="" action="{{action('CreateReportController@sendReport')}}" method="post">
+@csrf
   <div class="report-second-page">
       <div class="report-header second">
         <h1>Felanmälan - Beskriv fel</h1>
@@ -87,7 +89,7 @@
 
       <div class="describe-problem">
         <h2><i class="material-icons">warning</i> Beskriv fel</h2>
-        <textarea class="describe-field" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder ='Ex: En fläktpanel hänger snett i sal 12. Se bifogad bild'" placeholder="Ex: En fläktpanel hänger snett i sal 12. Se bifogad bild"></textarea>
+        <textarea name="description" class="describe-field" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder ='Ex: En fläktpanel hänger snett i sal 12. Se bifogad bild'" placeholder="Ex: En fläktpanel hänger snett i sal 12. Se bifogad bild"></textarea>
         <p>Lämna gärna ett rumsnummer eller annan indikation på vart felet finns</p>
       </div>
 
@@ -100,21 +102,21 @@
           <div class="name">
             <p class="label">Namn</p>
             <div class="input-and-check">
-              <input type="text" name="" value="" placeholder="Namn Namnsson">
+              <input type="text" name="name" value="" placeholder="Namn Namnsson">
               <i class="material-icons check-input">check_circle</i>
             </div>
           </div>
           <div class="phone">
             <p class="label">Telefon</p>
             <div class="input-and-check">
-              <input type="text" name="" value="" placeholder="0701234567">
+              <input type="text" name="telephone" value="" placeholder="0701234567">
               <i class="material-icons check-input">check_circle</i>
             </div>
           </div>
           <div class="email">
             <p class="label">Email</p>
             <div class="input-and-check">
-              <input type="text" name="" value="" placeholder="mail@mail.com">
+              <input type="text" name="email" value="" placeholder="mail@mail.com">
               <i class="material-icons check-input">check_circle</i>
             </div>
           </div>
@@ -122,9 +124,11 @@
 
       <div class="buttons">
         <button class="go-back" type="button" name="button">Gå Tillbaka</button>
-        <button class="send-report" type="button" name="button">Skicka Anmälan</button>
+        <button class="send-report" type="submit" name="button">Skicka Anmälan</button>
       </div>
   </div>
+</form>
+
 
 </div>
 

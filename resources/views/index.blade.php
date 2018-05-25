@@ -30,7 +30,14 @@
           </li>
         @endforeach
       </ul>
-      <button type="submit" name="button">Choose Campus</button>
+      <div class="select-campus-box">
+        <p>Stämmer ditt val av:</p>
+        <h2 class="name-of-clicked">Göteborgs Universitet</h2>
+        <div class="button-box">
+          <button class="wrong-campus" type="button" name="button">Nej</button>
+          <button class="choose-campus" type="submit" name="button">Ja</button>
+        </div>
+      </div>
     </form>
   </div>
   </div>
