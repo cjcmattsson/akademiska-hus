@@ -66,7 +66,6 @@
         </div>
       </div>
     </div><div class="one-news-item">
-<<<<<<< HEAD
       <div class="news-image"></div>
       <div class="news-text">
         <div class="city-and-date">
@@ -123,8 +122,6 @@
         </div>
       </div>
     </div><div class="one-news-item">
-=======
->>>>>>> 836185d317298eb2befdc69464002ef78c65500d
       <div class="news-image"></div>
       <div class="news-text">
         <div class="city-and-date">
@@ -146,65 +143,6 @@
           <p>Massa glada studenter gör orimliga saker</p>
         </div>
       </div>
-<<<<<<< HEAD
-=======
-    </div>
-    <div class="one-news-item">
-      <div class="news-image"></div>
-      <div class="news-text">
-        <div class="city-and-date">
-          <p class="news-city">Göteborg</p>
-          <p class="news-date">5/12-2016</p>
-        </div>
-        <div class="news-main-content-text-short">
-          <p>Massa glada studenter gör orimliga saker</p>
-        </div>
-      </div>
-    </div><div class="one-news-item">
-      <div class="news-image"></div>
-      <div class="news-text">
-        <div class="city-and-date">
-          <p class="news-city">Göteborg</p>
-          <p class="news-date">5/12-2016</p>
-        </div>
-        <div class="news-main-content-text-short">
-          <p>Massa glada studenter gör orimliga saker</p>
-        </div>
-      </div>
-    </div><div class="one-news-item">
-      <div class="news-image"></div>
-      <div class="news-text">
-        <div class="city-and-date">
-          <p class="news-city">Göteborg</p>
-          <p class="news-date">5/12-2016</p>
-        </div>
-        <div class="news-main-content-text-short">
-          <p>Massa glada studenter gör orimliga saker</p>
-        </div>
-      </div>
-    </div><div class="one-news-item">
-      <div class="news-image"></div>
-      <div class="news-text">
-        <div class="city-and-date">
-          <p class="news-city">Göteborg</p>
-          <p class="news-date">5/12-2016</p>
-        </div>
-        <div class="news-main-content-text-short">
-          <p>Massa glada studenter gör orimliga saker</p>
-        </div>
-      </div>
-    </div><div class="one-news-item">
-      <div class="news-image"></div>
-      <div class="news-text">
-        <div class="city-and-date">
-          <p class="news-city">Göteborg</p>
-          <p class="news-date">5/12-2016</p>
-        </div>
-        <div class="news-main-content-text-short">
-          <p>Massa glada studenter gör orimliga saker</p>
-        </div>
-      </div>
->>>>>>> 836185d317298eb2befdc69464002ef78c65500d
     </div><div class="one-news-item">
       <div class="news-image"></div>
       <div class="news-text">
@@ -228,12 +166,6 @@
         </div>
       </div>
     </div>
-<<<<<<< HEAD
-  </div>
-    <div class="q-and-a">Q&A</div>
-
-  </div>
-=======
   </div>
       <div class="q-and-a">
           <ul class="expander-box">
@@ -255,6 +187,5 @@
       </div>
     </div>
   </div>
->>>>>>> 836185d317298eb2befdc69464002ef78c65500d
 </div>
 @stop

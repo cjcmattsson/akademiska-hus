@@ -591,11 +591,7 @@ body {
 }
 
 .content-feed .news-feed .q-and-a {
-<<<<<<< HEAD
-  background-color: yellow;
-=======
   background-color: white;
->>>>>>> 836185d317298eb2befdc69464002ef78c65500d
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
 }
