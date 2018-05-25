@@ -1,0 +1,67 @@
+.settings-side-menu, .contact-side-menu {
+  height: 100vh;
+  width: 80vw;
+  position: absolute;
+  background-color: $main-green;
+  top: 0;
+  right: -85vw;
+  z-index: 100!important;
+  transition: all 0.5s ease;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(82,82,82,1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(82,82,82,1);
+  box-shadow: 0px 0px 5px 0px rgba(82,82,82,1);
+  color: white;
+
+  h2 {
+    font-family: $header-font;
+    font-size: 25px;
+    font-weight: 100;
+  }
+}
+
+.contact-side-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  .side-menu-header {
+    top: 0;
+    height: 12%;
+    background-color: #6AB14C;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+
+    .material-icons {
+      font-size: 35px;
+    }
+
+    h2 {
+      margin-left: 25px;
+      font-size: 30px;
+    }
+  }
+}
+
+
+.settings-side-menu {
+  right: -85vw;
+}
+
+.show-settings{
+  right: 0vw;
+}
+
+.contact-side-menu {
+  left: -85vw;
+}
+
+.show-contact{
+  left: 0vw;
+}
+
+.contact-side-menu {
+  p {
+    margin: 0;
+  }
+}
