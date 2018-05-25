@@ -13677,7 +13677,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(11);
-module.exports = __webpack_require__(39);
+module.exports = __webpack_require__(40);
 
 
 /***/ }),
@@ -13695,6 +13695,7 @@ __webpack_require__(12);
 __webpack_require__(36);
 __webpack_require__(37);
 __webpack_require__(38);
+__webpack_require__(39);
 
 // if ('serviceWorker' in navigator) {
 //   window.addEventListener('load', function() {
@@ -36032,6 +36033,26 @@ if (questionsNav) {
 
 /***/ }),
 /* 39 */
+/***/ (function(module, exports) {
+
+var boxes = document.getElementsByClassName('expander-box');
+
+for (var i = 0; i < boxes.length; i++) {
+  boxes[i].addEventListener('click', expand, false);
+}
+
+function expand() {
+  var answer = this.querySelector('.answer-box');
+
+  if (answer.style.display === 'block') {
+    answer.style.display = 'none';
+  } else {
+    answer.style.display = 'block';
+  }
+};
+
+/***/ }),
+/* 40 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
