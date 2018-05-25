@@ -29,14 +29,14 @@ use Illuminate\Support\Facades\Auth;
               <div class="contact-side-menu">
                 <div class="side-menu-header contact">
                   <i class="material-icons">phone</i>
-                  <p>Kontakt</p>
+                  <h2>Kontakt</h2>
                 </div>
                   <div class="campus-section">
                     <h2>{{$campus->name}}</h2>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
+                    <p>Data from database</p>
+                    <p>Data from database</p>
+                    <p>Data from database</p>
+                    <p>Data from database</p>
                   </div>
                   <div class="akademiska-hus-section">
                     <h2>Akademiska Hus</h2>
@@ -45,7 +45,7 @@ use Illuminate\Support\Facades\Auth;
                   </div>
                   <div class="jour">
                     <h2>Journummer</h2>
-                    <p></p>
+                    <p>Data from database</p>
                   </div>
                 <button class="close-contact-menu" type="button" name="button">STÄNG SKITEN</button>
 
