@@ -22,6 +22,7 @@ if (campusNav) {
     campusPage.classList.remove('campus-right')
     ahaPage.classList.add('aha-left')
     campusPage.classList.add('campus-middle');
+    console.log("hje");
     questionsPage.classList.remove('questions-middle');
   })
 }

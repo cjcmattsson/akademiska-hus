@@ -35969,6 +35969,8 @@ if (search) {
 
 var settings = document.querySelector('.settings');
 var contact = document.querySelector('.contact');
+var closeSettings = document.querySelector('.close-settings-menu');
+var closeContact = document.querySelector('.close-contact-menu');
 
 var settingsSideMenu = document.querySelector('.settings-side-menu');
 
@@ -35979,6 +35981,9 @@ function showSettingsMenu() {
 
 if (settings) {
   settings.addEventListener('click', showSettingsMenu);
+  closeSettings.addEventListener('click', function () {
+    settingsSideMenu.classList.remove('show-settings');
+  });
 }
 
 var contactSideMenu = document.querySelector('.contact-side-menu');
@@ -35990,6 +35995,9 @@ function showContactMenu() {
 
 if (contact) {
   contact.addEventListener('click', showContactMenu);
+  closeContact.addEventListener('click', function () {
+    contactSideMenu.classList.remove('show-contact');
+  });
 }
 
 /***/ }),
@@ -36020,6 +36028,7 @@ if (campusNav) {
     campusPage.classList.remove('campus-right');
     ahaPage.classList.add('aha-left');
     campusPage.classList.add('campus-middle');
+    console.log("hje");
     questionsPage.classList.remove('questions-middle');
   });
 }
