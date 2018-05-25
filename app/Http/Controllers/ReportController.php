@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Report;
 
+
 class ReportController extends Controller
 {
   public function all()
@@ -12,8 +13,11 @@ class ReportController extends Controller
       return Report::all();
   }
 
-  public function one($id)
+    public function buildings()
     {
-        return Report::find($id);
+      $campus = Campus::with('buildings')->get();
+      return view('index', [
+        'cities' => $cities,
+      ]);
     }
 }

@@ -4,13 +4,18 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Report;
+use App\Campus;
 use App\Http\Controllers\Controller;
 
 class CreateReportController extends Controller
 {
   public function index()
   {
-    return view('/report');
+      $campus = request()->cookie('campus');
+      $buildings = Campus::with('building')->where('name', $campus)->first();
+      return view('/report', [
+        'buildings' => $buildings->building,
+      ]);
   }
 
 

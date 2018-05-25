@@ -22,60 +22,17 @@
   </div>
 
     <div class="building-list">
+      @foreach ($buildings as $building)
       <div class="building">
         <div class="name-and-adress">
-          <h3 class="building-name">Chalmers bibliotek</h3>
-          <p class="building-adress-and-code"><span>Hejgatan 12</span><span>630524</span></p>
+          <h3 class="building-name">{{$building->name}}</h3>
+          <p class="building-adress-and-code"><span>{{$building->adress}}</span><span>{{$building->code}}</span></p>
         </div>
         <div class="select-building">
           <button type="button" name="button">-></button>
         </div>
       </div>
-      <div class="building">
-        <div class="name-and-adress">
-          <h3 class="building-name">Chalmers bibliotek</h3>
-          <p class="building-adress-and-code"><span>Hejgatan 12</span><span>630524</span></p>
-        </div>
-        <div class="select-building">
-          <button type="button" name="button">-></button>
-        </div>
-      </div>
-      <div class="building">
-        <div class="name-and-adress">
-          <h3 class="building-name">Chalmers bibliotek</h3>
-          <p class="building-adress-and-code"><span>Hejgatan 12</span><span>630524</span></p>
-        </div>
-        <div class="select-building">
-          <button type="button" name="button">-></button>
-        </div>
-      </div>
-      <div class="building">
-        <div class="name-and-adress">
-          <h3 class="building-name">Chalmers bibliotek</h3>
-          <p class="building-adress-and-code"><span>Hejgatan 12</span><span>630524</span></p>
-        </div>
-        <div class="select-building">
-          <button type="button" name="button">-></button>
-        </div>
-      </div>
-      <div class="building">
-        <div class="name-and-adress">
-          <h3 class="building-name">Chalmers bibliotek</h3>
-          <p class="building-adress-and-code"><span>Hejgatan 12</span><span>630524</span></p>
-        </div>
-        <div class="select-building">
-          <button type="button" name="button">-></button>
-        </div>
-      </div>
-      <div class="building">
-        <div class="name-and-adress">
-          <h3 class="building-name">Chalmers bibliotek</h3>
-          <p class="building-adress-and-code"><span>Hejgatan 12</span><span>630524</span></p>
-        </div>
-        <div class="select-building">
-          <button type="button" name="button">-></button>
-        </div>
-      </div>
+    @endforeach
     </div>
   </div>
 
