@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon--kontakt--top-nav</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-0.9%" y="-4.3%" width="101.7%" height="110.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="nyheter-frågor-campuskollen" transform="translate(-44.000000, -61.000000)" fill="#FFFFFF">
+            <g id="nav-top" filter="url(#filter-1)">
+                <path d="M48,102.615894 C48,103.408583 48.2386492,104.249315 48.7474672,104.978949 C48.7969981,105.051012 53.8251407,112.093638 56.7384615,111.999056 C64.9185741,111.740831 74.5365854,103.809432 81.1602251,97.2051872 C87.7853659,90.5994411 95.7388368,81.0090989 96,72.8164724 L96,72.750415 C96,69.8814193 89.0281426,64.8385327 88.9590994,64.7934936 C87.0634146,63.4678404 84.9771107,63.9512609 84.1305816,65.1568096 C83.6142589,65.8894469 78.2694184,73.9064205 77.6660413,74.8897759 C77.4033771,75.3176481 77.2757974,75.8386013 77.2757974,76.4075962 C77.2757974,77.1402335 77.4889306,77.9509387 77.9061914,78.7451295 C78.3144465,79.5152995 79.6472795,81.8513315 80.3031895,82.9983292 C79.5947467,84.0042042 77.7771107,86.3702623 74.035272,90.0980049 C70.3204503,93.8047293 67.926454,95.6348212 66.9133208,96.3464402 C65.7651032,95.6933721 63.4221388,94.3632151 62.6506567,93.9608651 C61.1977486,93.1951991 59.7448405,93.1081233 58.764728,93.7311653 C57.841651,94.313672 49.8611632,99.623791 49.1016886,100.170266 C48.3857411,100.686716 48,101.613021 48,102.615894" id="icon--kontakt--top-nav" transform="translate(72.000000, 88.000000) scale(-1, 1) translate(-72.000000, -88.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="54px" viewBox="0 0 34 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon--karta--campusinfo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="campusinfo-campuskollen" transform="translate(-604.000000, -1076.000000)" fill="#6CBE45">
+            <g id="Karta" transform="translate(585.000000, 1076.000000)">
+                <g id="Location" transform="translate(19.000000, 0.000000)">
+                    <path d="M0,16.6343749 C0,32.516876 16.6557942,53.2299995 16.6557942,53.2299995 C16.6557942,53.2299995 33.3115885,32.516876 33.3115885,16.6343749 C33.3115885,7.44754231 25.8544563,0 16.6557942,0 C7.45579973,0 0,7.44820769 0,16.6343749 Z M7.66166535,16.8339874 C7.66166535,11.8729514 11.6877039,7.85142493 16.6557942,7.85142493 C21.6225521,7.85142493 25.6499231,11.8729514 25.6499231,16.8339874 C25.6499231,21.7950233 21.6225521,25.8165498 16.6557942,25.8165498 C11.6877039,25.8165498 7.66166535,21.7950233 7.66166535,16.8339874 Z" id="icon--karta--campusinfo"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -98,8 +98,13 @@
         align-items: center;
         color: $main-green;
 
+        img {
+          height: 35px;
+          max-width: 35px;
+        }
+
         .material-icons {
-          font-size: 50px!important;
+          font-size: 40px!important;
         }
       }
 

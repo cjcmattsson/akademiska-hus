@@ -18,13 +18,13 @@
       @csrf
       <ul class="campus-list">
         @foreach ($cities as $city)
-          <li class="city"><a>{{$city->campus_city}}<i class="material-icons add">add</i><i class="material-icons remove">remove</i></a>
+          <li class="city"><a>{{$city->campus_city}}<img class="add" src="{{ URL::to('/') }}/images/plus-dark.svg" alt=""><img class="remove" src="{{ URL::to('/') }}/images/minus-dark.svg" alt=""></a>
             <ul class="campuses-in-city">
           @foreach ($city->campuses as $campus)
             <li>
               <input class="radio" type="radio" name="campus" value="{{$campus->name}}" id="{{$campus->name}}">
               <label class="radioLabel" for="{{$campus->name}}">{{$campus->name}}</label>
-              <i class="material-icons">keyboard_arrow_right</i></li>
+              <img class="select-arrow" src="{{ URL::to('/') }}/images/arrow-right-dark.svg" alt=""></li>
           @endforeach
             </ul>
           </li>

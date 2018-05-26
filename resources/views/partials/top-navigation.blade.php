@@ -7,13 +7,13 @@ use Illuminate\Support\Facades\Auth;
         {{-- LEFT bottom navbar place --}}
         <div class="navbar-top-bar">
           <div class="top-icon">
-            <a class="contact"><i class="material-icons">phone</i></a>
+            <a class="contact"><img src="{{ URL::to('/') }}/images/contact-navbar.svg" alt=""></a>
           </div>
           <div class="top-icon">
             <a class="logo" href="{{url('/feed')}}"><i class="material-icons">radio</i></a>
           </div>
           <div class="top-icon">
-            <a class="settings"><i class="material-icons">settings</i></a>
+            <a class="settings"><img src="{{ URL::to('/') }}/images/settings-navbar.svg" alt=""></a>
           </div>
         </div>
 

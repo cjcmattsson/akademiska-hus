@@ -13,11 +13,11 @@
     <button class="read-more" type="button" name="button">+</button>
     <div class="info-contact-buttons">
       <div class="button-and-text">
-        <div class="button"><i class="material-icons">phone</i></div>
+        <div class="button"><img class="" src="{{ URL::to('/') }}/images/plus-dark.svg" alt=""></div>
         <p>Kontakt</p>
       </div>
       <div class="button-and-text">
-        <div class="button"><i class="material-icons">phone</i></div>
+        <div class="button"><div class="button"><img class="" src="{{ URL::to('/') }}/images/env-campus-page.svg" alt=""></div></div>
         <p>Miljöinfo</p>
       </div>
       <div class="button-and-text">
@@ -25,7 +25,7 @@
         <p>På gång</p>
       </div>
       <div class="button-and-text">
-        <div class="button"><i class="material-icons">phone</i></div>
+        <div class="button"><img class="" src="{{ URL::to('/') }}/images/map-icon-campus-page.svg" alt=""></div>
         <p>Karta</p>
       </div>
     </div>
