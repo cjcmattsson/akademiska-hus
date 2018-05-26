@@ -28,29 +28,44 @@ use Illuminate\Support\Facades\Auth;
 
               <div class="contact-side-menu">
                 <div class="side-menu-header contact">
-                  <i class="material-icons">phone</i>
+                  <img src="{{ URL::to('/') }}/images/contact-navbar.svg" alt="">
                   <h2>Kontakt</h2>
                 </div>
+                <div class="text-side-menu">
+
                   <div class="campus-section">
                     {{-- <h2>{{$campus->name}}</h2> --}}
-                    <p>Data from database</p>
-                    <p>Data from database</p>
-                    <p>Data from database</p>
-                    <p>Data from database</p>
+                    <h2>Campus Bohuslän</h2>
+                    <p class="c-name">Janne Andersson</p>
+                    <p class="c-title">Konsult</p>
+                    <p class="c-phone"><img src="{{ URL::to('/') }}/images/phone-icon-white.svg" alt="">031-124 56703</p>
+                    <p class="c-email"><img src="{{ URL::to('/') }}/images/email-icon-white.svg" alt="">mail.mailsson@mail.com</p>
                   </div>
                   <div class="akademiska-hus-section">
                     <h2>Akademiska Hus</h2>
-                    <p>Växel: 031-63 24 00</p>
-                    <p>E-post: info@akademiskahus.se</p>
+                    <p class="c-phone"><img src="{{ URL::to('/') }}/images/phone-icon-white.svg" alt="">031-124 56703</p>
+                    <p class="c-email"><img src="{{ URL::to('/') }}/images/email-icon-white.svg" alt="">mail.mailsson@mail.com</p>
                   </div>
                   <div class="jour">
                     <h2>Journummer</h2>
-                    <p>Data from database</p>
+                    <p class="c-name">Chalmers</p>
+                    <p class="c-phone"><img src="{{ URL::to('/') }}/images/phone-icon-white.svg" alt="">031-124 56703</p>
                   </div>
-                <button class="close-contact-menu" type="button" name="button">STÄNG SKITEN</button>
+              </div>
+              <button class="close-contact-menu" type="button" name="button"><img src="{{ URL::to('/') }}/images/close-white.svg" alt="">Stäng</button>
 
               </div>
               <div class="settings-side-menu">
-                <button class="close-settings-menu" type="button" name="button">STÄNG SKITEN</button>
+                <div class="side-menu-header settings">
+                  <h2>Inställningar</h2>
+                  <img src="{{ URL::to('/') }}/images/settings-navbar.svg" alt="">
+                </div>
+                <div class="settings-text">
+                  <div class="change-campus">Byt Campus</div>
+                  <div class="notifications">Notiser</div>
+                  <div class="help">Hjälp</div>
+                  <div class="admin-login">Admin login</div>
+                </div>
+                <button class="close-settings-menu" type="button" name="button">Stäng<img src="{{ URL::to('/') }}/images/close-white.svg" alt=""></button>
               </div>
 </div>

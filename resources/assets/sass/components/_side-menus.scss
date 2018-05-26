@@ -19,21 +19,25 @@
   }
 }
 
+.text-side-menu {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .contact-side-menu {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   .side-menu-header {
-    top: 0;
     height: 12%;
     background-color: #6AB14C;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-left: 20px;
+    margin-bottom: 20vh;
 
-    .material-icons {
-      font-size: 35px;
+    img {
+      height: 35px;
     }
 
     h2 {
@@ -41,13 +45,130 @@
       font-size: 30px;
     }
   }
+
+  .campus-section, .akademiska-hus-section, .jour {
+    padding: 10px 0;
+    h2 {
+      font-size: 30px;
+      margin: 0 0 7px;
+    }
+  }
+
+  .campus-section, .akademiska-hus-section, .jour {
+    .c-name {
+      font-size: 18px;
+    }
+    .c-title {
+      margin-bottom: 5px;
+    }
+    .c-title, .c-phone, .c-email  {
+      font-size: 15px;
+      font-weight: 100;
+    }
+
+    .c-phone, .c-email {
+      display: flex;
+      align-items: center;
+      text-decoration: underline;
+
+      img {
+        height: 12px;
+        max-width: 12px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .akademiska-hus-section {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  .jour {
+
+  }
+
+  .close-contact-menu {
+    position: absolute;
+    bottom: 0;
+    height: 12%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    width: 100%;
+    height: 12%;
+    color: white;
+    font-size: 25px;
+
+    img {
+      height: 25px;
+      margin-right: 25px;
+    }
+  }
 }
 
 
 .settings-side-menu {
   right: -85vw;
+
+  .side-menu-header.settings {
+    height: 12%;
+    background-color: #6AB14C;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    margin-bottom: 45vh;
+
+    img {
+      height: 32px;
+    }
+
+    h2 {
+      margin-right: 25px;
+      font-size: 30px;
+    }
+  }
+
+  .settings-text {
+    padding: 0 40px;
+
+    .change-campus, .notifications, .help, .admin-login {
+      border-bottom: 1px solid white;
+      font-size: 25px;
+      padding-bottom: 9px;
+      padding-top: 6px;
+    }
+
+    .admin-login {
+      border-bottom: none;
+    }
+  }
+
+  .close-settings-menu {
+    position: absolute;
+    bottom: 0;
+    height: 12%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    width: 100%;
+    height: 12%;
+    color: white;
+    font-size: 25px;
+
+    img {
+      height: 25px;
+      margin-left: 25px;
+    }
+  }
 }
 
+
+// Click-events
 .show-settings{
   right: 0vw;
 }

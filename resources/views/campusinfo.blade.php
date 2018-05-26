@@ -2,7 +2,7 @@
 
 @section('content')
   {{-- style="background-image: url('{{}}')" --}}
-  <div class="campus-header">
+  <div class="campus-header" style="background-image: url('{{ URL::to('/') }}/images/bohuslan.jpg')">
 
     <h1 class="header-hero">{{$campus->name}}</h1>
   </div>
@@ -14,7 +14,7 @@
     <div class="info-contact-buttons">
       <div class="button-and-text">
         <div class="button"><img class="" src="{{ URL::to('/') }}/images/plus-dark.svg" alt=""></div>
-        <p>Kontakt</p>
+        <p>Hitta Sal</p>
       </div>
       <div class="button-and-text">
         <div class="button"><div class="button"><img class="" src="{{ URL::to('/') }}/images/env-campus-page.svg" alt=""></div></div>

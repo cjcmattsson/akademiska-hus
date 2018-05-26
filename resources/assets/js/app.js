@@ -12,6 +12,7 @@ require('./feed-navbar');
 require('./map');
 require('./report');
 require('./q-and-a');
+require('./campusPage');
 
 // if ('serviceWorker' in navigator) {
 //   window.addEventListener('load', function() {

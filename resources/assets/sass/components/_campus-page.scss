@@ -1,10 +1,10 @@
 .campus-header {
   position: relative;
-  height: 200px;
-  background: url('http://unsplash.it/1200x800') center center no-repeat;
+  height: 190px;
   background-size: cover;
   display: flex;
   align-items: flex-end;
+
 
   &:before {
     content: '';
@@ -39,10 +39,11 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   .main-text-overlay {
-    width: 92%;
-    height: 210px;
+    width: 87%;
+    height: 186px;
     position: absolute;
     background: -webkit-linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 100%);
     background: -o-linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 100%);
@@ -54,7 +55,7 @@
     margin-bottom: 0;
     font-size: 18px;
     overflow: hidden;
-    max-height: 200px;
+    max-height: 180px;
   }
 
   p {
@@ -63,8 +64,8 @@
 
   .read-more {
     background-color: $button-purple;
-    height: 25px;
-    width: 25px;
+    height: 32px;
+    width: 32px;
     border-radius: 50%;
     margin: 0 auto;
     border: 0;
@@ -72,6 +73,23 @@
     font-size: 15px;
     margin-top: -10px;
     z-index: 5;
+  }
+
+  .read-more:focus {
+    outline: none;
+  }
+
+  .hide-overlay {
+    display: none;
+  }
+
+  .show-text {
+    max-height: none;
+    height: auto;
+  }
+
+  .read-more-position {
+    margin-top: 15px;
   }
 
   .info-contact-buttons {
@@ -99,11 +117,12 @@
         color: $main-green;
 
         img {
-          height: 35px;
-          max-width: 35px;
+          height: 36px;
+          max-width: 36px;
         }
 
         .material-icons {
+          z-index: 0;
           font-size: 40px!important;
         }
       }
@@ -120,9 +139,6 @@
         text-align:center;
         line-height:18px;
         border-radius:50%;
-        -webkit-box-shadow: 0px 0px 1px 1px rgba(149, 149, 149, 0.75);
-        -moz-box-shadow: 0px 0px 1px 1px rgba(149, 149, 149, 0.75);
-        box-shadow: 0px 0px 1px 1px rgba(149, 149, 149, 0.75);
       }
 
       @media (min-width: 370px) {
