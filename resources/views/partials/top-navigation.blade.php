@@ -64,7 +64,7 @@ use Illuminate\Support\Facades\Auth;
                   <div class="change-campus">Byt Campus</div>
                   <div class="notifications">Notiser</div>
                   <div class="help">Hjälp</div>
-                  <div class="admin-login">Admin login</div>
+                  <a href="{{route('login')}}"><div class="admin-login">Admin login</div></a>
                 </div>
                 <button class="close-settings-menu" type="button" name="button">Stäng<img src="{{ URL::to('/') }}/images/close-white.svg" alt=""></button>
               </div>
