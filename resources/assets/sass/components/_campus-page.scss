@@ -267,4 +267,77 @@
   .show-map-section {
     transform: translateY(0);
   }
+
+  .urgent-error {
+    transition: all 0.5s ease;
+    z-index: 100;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+
+
+    .close-error {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 15px;
+      height: 30px;
+    }
+
+    .error-message {
+      margin-top: 25%;
+      background-color: $button-purple;
+      width: 85%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateY(0);
+
+      img {
+        margin-left: 12px;
+        width: 40px;
+      }
+
+
+      .text-error {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        color: white;
+        height: 100%;
+        width: 80%;
+        padding: 15px;
+
+        p, h2 {
+          margin: 0;
+        }
+
+        p {
+          font-size: 12px;
+          font-weight: thin;
+        }
+
+        h2 {
+          margin: 10px 0;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .show-error-section {
+    pointer-events: all;
+    opacity: 1;
+  }
+  .show-error-message {
+    transform: translateY(0);
+  }
 }

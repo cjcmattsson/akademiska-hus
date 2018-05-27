@@ -15,6 +15,7 @@ if (readMore) {
   });
 }
 
+// Show and hide map-section
 const mapIcon = document.querySelector('.button.map');
 const mapSection = document.querySelector('.map-section');
 const closeMap = document.querySelector('.map-section .map img');
@@ -25,4 +26,18 @@ if (mapIcon) {
   closeMap.addEventListener('click', () => {
     mapSection.classList.remove('show-map-section');
   })
+}
+
+// Show and hide ERROR MESSAGE-section
+const errorIcon = document.querySelector('.button.happening-notification')
+const errorSection = document.querySelector('.urgent-error');
+const closeError = document.querySelector('.close-error');
+
+if (errorIcon) {
+  errorIcon.addEventListener('click', () => {
+    errorSection.classList.add('show-error-section');
+  });
+  closeError.addEventListener('click', () => {
+    errorSection.classList.remove('show-error-section');
+  });
 }

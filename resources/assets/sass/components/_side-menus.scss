@@ -163,6 +163,12 @@
     height: 12%;
     color: white;
     font-size: 25px;
+    background-color: $main-green;
+    border: none;
+
+    .close-settings-menu:active {
+      border: none;
+    }
 
     img {
       height: 25px;

@@ -72,6 +72,9 @@ body {
 }
 // BOTTOM NAVBAR
 .navbar-bot {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.52);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.52);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.52);
   bottom: 0;
   left: 0;
   position: fixed;
@@ -83,7 +86,7 @@ body {
 
     .nav-item {
       z-index: 15;
-      width: 33%;
+
       height: 100%;
       display: flex;
       align-items: flex-end;
@@ -95,8 +98,17 @@ body {
       border-top: 0;
       border-bottom: 0;
     }
+
+    .nav-item:nth-child(odd) {
+      width: 34%;
+    }
+    .nav-item:nth-child(even) {
+      width: 33%;
+      border-right: 1px solid rgba(112, 112, 112, 0.43);
+      border-left: 1px solid rgba(112, 112, 112, 0.43);
+    }
 }
-.navbar-bot:before {
+.navbar-bot::after {
   z-index: 1;
   font-family: 'Material Icons';
   display: flex;
@@ -108,6 +120,16 @@ body {
   font-size: 25px;
   background-color: $main-green;
   height: 55px;
+  width: 55px;
+  border-radius: 50%;
+}
+.navbar-bot::before {
+  z-index: 0;
+  position: absolute;
+  top: -26px;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 56px;
   width: 55px;
   border-radius: 50%;
 }

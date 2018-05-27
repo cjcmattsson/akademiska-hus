@@ -77,6 +77,17 @@
       </div>
   </div>
 
+  <div class="urgent-error">
+    <img class="close-error" src="{{ URL::to('/') }}/images/close.svg" alt="">
+    <div class="error-message">
+      <img src="{{ URL::to('/') }}/images/settings-navbar.svg" alt="">
+      <div class="text-error">
+        <p>Tisdag, 27 mars</p>
+        <h2>Strömavbrott i biblioteket, Chalmers Tvärgatan 1 - förväntas tillbaka kl 16.</h2>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 @stop
