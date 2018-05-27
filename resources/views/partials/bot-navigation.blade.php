@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Auth;
 
           @else
               {{-- If NOT logged in - Middle bottom navbar place --}}
-              <a class="nav-item" href="{{route('report')}}">Felanmäl</a>
+              <a class="report nav-item" href="{{route('report')}}">Felanmäl</a>
 
               {{-- Put this in the cog-wheel section later --}}
               {{-- <a class="nav-link" href="{{url('login')}}">LOGIN</a> --}}

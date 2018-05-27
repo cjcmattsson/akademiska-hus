@@ -7,9 +7,9 @@ body {
 
 .navbar-bot, .navbar-top-bar {
   max-width: 100vw;
-   background-color: $main-green;
-   color: white;
- }
+  background-color: $main-green;
+  color: white;
+}
 
 .navbar-top {
   top: 0;
@@ -84,29 +84,29 @@ body {
   justify-content: center;
   align-items: center;
 
-    .nav-item {
-      z-index: 15;
+  .nav-item {
+    z-index: 15;
 
-      height: 100%;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      padding-bottom: 12px;
-      text-decoration: none;
-      color: white;
-      border-width: thin;
-      border-top: 0;
-      border-bottom: 0;
-    }
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 12px;
+    text-decoration: none;
+    color: white;
+    border-width: thin;
+    border-top: 0;
+    border-bottom: 0;
+  }
 
-    .nav-item:nth-child(odd) {
-      width: 34%;
-    }
-    .nav-item:nth-child(even) {
-      width: 33%;
-      border-right: 1px solid rgba(112, 112, 112, 0.43);
-      border-left: 1px solid rgba(112, 112, 112, 0.43);
-    }
+  .nav-item:nth-child(odd) {
+    width: 34%;
+  }
+  .nav-item:nth-child(even) {
+    width: 33%;
+    border-right: 1px solid rgba(112, 112, 112, 0.43);
+    border-left: 1px solid rgba(112, 112, 112, 0.43);
+  }
 }
 .navbar-bot::after {
   z-index: 1;
@@ -132,4 +132,10 @@ body {
   height: 56px;
   width: 55px;
   border-radius: 50%;
+}
+
+.active-nav-item {
+  -webkit-box-shadow: inset 0px -4px 7px -2px rgba(0,0,0,0.52);
+  -moz-box-shadow: inset 0px -4px 7px -2px rgba(0,0,0,0.52);
+  box-shadow: inset 0px -4px 7px -2px rgba(0,0,0,0.52);
 }

@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="feed-nav-bar">
-  <div class="feed-nav-item aha-nav" href="/">AHA</div>
+  <div class="feed-nav-item aha-nav active-feed-nav-item" href="/">AHA</div>
   <div class="feed-nav-item campus-nav" href="/">Campus</div>
   <div class="feed-nav-item questions-nav" href="/">Frågor</div>
 </div>
