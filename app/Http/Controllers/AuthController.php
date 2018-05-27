@@ -18,7 +18,7 @@ class AuthController extends Controller
     $credentials = $request->only(['email', 'password']);
 
     if (Auth::attempt($credentials)) {
-      return redirect()->intended('/driftstorningar');
+      return redirect()->intended('/editcampus');
     }
     return back()->withErrors('Emailadressen eller/och lösenordet ni angivit stämmer inte');
   }

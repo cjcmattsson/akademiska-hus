@@ -5,8 +5,13 @@
 body {
   margin: 0;
   padding: 0;
+  color: black;
 }
 
-a:focus, a:active, a:target {
+a:focus, a:active {
   color: inherit;
+}
+
+button:active, button:focus {
+  outline: none;
 }

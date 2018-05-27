@@ -16,6 +16,7 @@ Route::get('startpage', 'StartPageController@index');
 
 Route::get('/', 'CampusSelectionController@campusSelection')->name('select.campus');
 Route::post('/', 'CampusSelectionController@setCampusCookie')->name('store.campus');
+Route::get('/', 'CampusSelectionController@unsetCampus')->name('unset.campus');
 
 // route to the error-report section
 Route::get('felanmallan', 'CreateReportController@index')->name('report')->middleware('campus');

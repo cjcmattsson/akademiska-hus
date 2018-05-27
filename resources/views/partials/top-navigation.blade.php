@@ -61,7 +61,7 @@ use Illuminate\Support\Facades\Auth;
                   <img src="{{ URL::to('/') }}/images/settings-navbar.svg" alt="">
                 </div>
                 <div class="settings-text">
-                  <div class="change-campus">Byt Campus</div>
+                  <a href="{{route('unset.campus')}}"><div class="change-campus">Byt Campus</div></a>
                   <div class="notifications">Notiser</div>
                   <div class="help">Hjälp</div>
                   <a href="{{route('login')}}"><div class="admin-login">Admin login</div></a>
