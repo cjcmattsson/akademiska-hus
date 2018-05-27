@@ -9,12 +9,22 @@ use App\Report;
 
 class AdminController extends Controller
 {
-  public function dashboard()
+  public function disturbances()
   {
     $reports = Report::all();
-    return view('/admin/dashboard', [
+    return view('admin/driftstorningar', [
       'reports' => $reports,
       ]);
+  }
+
+  public function editCampus()
+  {
+    return view('admin/campus-news-admin');
+  }
+
+  public function editFaq()
+  {
+    return view('admin/questions-admin');
   }
 
   public function profile()

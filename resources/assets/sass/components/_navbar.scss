@@ -139,3 +139,23 @@ body {
   -moz-box-shadow: inset 0px -4px 7px -2px rgba(0,0,0,0.52);
   box-shadow: inset 0px -4px 7px -2px rgba(0,0,0,0.52);
 }
+
+
+.navbar-bot.admin {
+  .admin-bot-nav-item {
+    text-transform: uppercase;
+    text-align: center!important;
+    background-color: $admin-grey;
+    padding-bottom: 3px!important;
+  }
+}
+
+.active-nav-item-admin {
+  background-color: #1D2029!important;
+}
+.navbar-bot.admin::after {
+  display: none;
+}
+.navbar-bot.admin::before {
+  display: none;
+}

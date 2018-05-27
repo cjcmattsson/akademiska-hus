@@ -23,16 +23,31 @@ feedNavItems.forEach(navItem => {
 })
 
 // BOT NAVBAR
+// Not Admin
 const newsNav = document.querySelector('.news.nav-item');
 const reportNav = document.querySelector('.report.nav-item');
 const campusNav = document.querySelector('.campus-info.nav-item');
 
+// Admin
+const disturbancesNav = document.querySelector('.disturbances.nav-item');
+const editCampusNav = document.querySelector('.edit-campus-info.nav-item.admin-bot-nav-item');
+const editFaqNav = document.querySelector('.edit-faq.nav-item');
+
 window.onload = () => {
+  // NOT admin section
   if(window.location.href.indexOf("feed") != -1){
     newsNav.classList.add('active-nav-item');
   } else if (window.location.href.indexOf("felanmallan") != -1) {
     reportNav.classList.add('active-nav-item');
   } else if (window.location.href.indexOf("campusinfo") != -1) {
     campusNav.classList.add('active-nav-item');
+  }
+// Admin Section
+    else if (window.location.href.indexOf("driftstorningar") != -1) {
+    disturbancesNav.classList.add('active-nav-item-admin');
+  } else if (window.location.href.indexOf("editcampus") != -1) {
+    editCampusNav.classList.add('active-nav-item-admin');
+  } else if (window.location.href.indexOf("editfaq") != -1) {
+    editFaqNav.classList.add('active-nav-item-admin');
   }
 }

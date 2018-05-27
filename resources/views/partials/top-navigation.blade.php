@@ -2,9 +2,9 @@
 use Illuminate\Support\Facades\Auth;
 @endphp
 
+@if (!Auth::check())
 <div class="navbar-top">
 
-        {{-- LEFT bottom navbar place --}}
         <div class="navbar-top-bar">
           <div class="top-icon">
             <a class="contact"><img src="{{ URL::to('/') }}/images/contact-navbar.svg" alt=""></a>
@@ -69,3 +69,4 @@ use Illuminate\Support\Facades\Auth;
                 <button class="close-settings-menu" type="button" name="button">Stäng<img src="{{ URL::to('/') }}/images/close-white.svg" alt=""></button>
               </div>
 </div>
+@endif

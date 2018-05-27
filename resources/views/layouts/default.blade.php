@@ -1,3 +1,7 @@
+@php
+use Illuminate\Support\Facades\Auth;
+@endphp
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -12,8 +16,11 @@
 </head>
 <body>
 
+@if(!Auth::check())
   @include('partials/top-navigation')
-
+@else
+  @include('partials/top-navigation-admin')
+@endif
   <main>
     @yield('content')
   </main>

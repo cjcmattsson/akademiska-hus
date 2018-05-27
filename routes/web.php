@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,8 +29,11 @@ Route::get('campusinfo', 'CampusInfoController@index')->middleware('campus');
 
 // User must be logged in to reach Admin Dashboard
 Route::get('/login', 'AuthController@loginPage')->name('login')->middleware('guest')->middleware('campus');
-Route::get('logout', 'AuthController@logout');
 Route::post('login', 'AuthController@login');
+Route::get('logout', 'AuthController@logout')->name('logout');
 
-Route::get('dashboard', 'AdminController@dashboard')->name('admin.dashboard')->middleware('auth');
+// Admin pages
+Route::get('driftstorningar', 'AdminController@disturbances')->name('admin.disturbances')->middleware('auth');
+Route::get('editcampus', 'AdminController@editCampus')->name('admin.campus')->middleware('auth');
+Route::get('editfaq', 'AdminController@editFaq')->name('admin.faq')->middleware('auth');
 Route::get('profile', 'AdminController@profile')->name('admin.profile')->middleware('auth');
