@@ -14,3 +14,15 @@ function expand() {
           answer.style.display = 'block';
        }
 };
+
+
+const faqQuestion = document.querySelectorAll('.expander-box');
+
+function toggleIcon () {
+  this.querySelector('.open-faq').classList.toggle('hide-faq');
+  this.querySelector('.close-faq').classList.toggle('show-faq');
+}
+
+faqQuestion.forEach(faq => {
+  faq.addEventListener('click', toggleIcon);
+})

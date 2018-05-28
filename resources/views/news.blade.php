@@ -149,14 +149,118 @@
 
       <div class="q-and-a">
           <ul class="expander-box">
-            <h3>Hur jobbar ni för att minska energiförbrukningen?</h3>
+            <div class="faq-question">
+              <img class="open-faq" src="{{ URL::to('/') }}/images/open-faq.svg" alt="">
+              <img class="close-faq" src="{{ URL::to('/') }}/images/close-faq.svg" alt="">
+              <h3>Hur jobbar ni för att minska energiförbrukningen?</h3>
+            </div>
             <li class="answer-box">
               <p>Dummy answer text text text text.</p>
             </li>
           </ul>
 
           <ul class="expander-box">
-            <h3>Hur bestäms hyresnivåerna på era lokaler?</h3>
+            <div class="faq-question">
+              <img class="open-faq" src="{{ URL::to('/') }}/images/open-faq.svg" alt="">
+              <img class="close-faq" src="{{ URL::to('/') }}/images/close-faq.svg" alt="">
+              <h3>Hur bestäms hyresnivåer för era lokaler?</h3>
+            </div>
+            <li class="answer-box">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Integer laoreet convallis eros sed sollicitudin. Etiam massa lorem,
+                lacinia sit amet lorem sit amet, sollicitudin porta nulla.
+              </p>
+            </li>
+          </ul>
+          <ul class="expander-box">
+            <div class="faq-question">
+              <img class="open-faq" src="{{ URL::to('/') }}/images/open-faq.svg" alt="">
+              <img class="close-faq" src="{{ URL::to('/') }}/images/close-faq.svg" alt="">
+              <h3>Hur jobbar ni för att minska energiförbrukningen?</h3>
+            </div>
+            <li class="answer-box">
+              <p>Dummy answer text text text text.</p>
+            </li>
+          </ul>
+
+          <ul class="expander-box">
+            <div class="faq-question">
+              <img class="open-faq" src="{{ URL::to('/') }}/images/open-faq.svg" alt="">
+              <img class="close-faq" src="{{ URL::to('/') }}/images/close-faq.svg" alt="">
+              <h3>Hur bestäms hyresnivåer för era lokaler?</h3>
+            </div>
+            <li class="answer-box">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Integer laoreet convallis eros sed sollicitudin. Etiam massa lorem,
+                lacinia sit amet lorem sit amet, sollicitudin porta nulla.
+              </p>
+            </li>
+          </ul>
+          <ul class="expander-box">
+            <div class="faq-question">
+              <img class="open-faq" src="{{ URL::to('/') }}/images/open-faq.svg" alt="">
+              <img class="close-faq" src="{{ URL::to('/') }}/images/close-faq.svg" alt="">
+              <h3>Hur jobbar ni för att minska energiförbrukningen?</h3>
+            </div>
+            <li class="answer-box">
+              <p>Dummy answer text text text text.</p>
+            </li>
+          </ul>
+
+          <ul class="expander-box">
+            <div class="faq-question">
+              <img class="open-faq" src="{{ URL::to('/') }}/images/open-faq.svg" alt="">
+              <img class="close-faq" src="{{ URL::to('/') }}/images/close-faq.svg" alt="">
+              <h3>Hur bestäms hyresnivåer för era lokaler?</h3>
+            </div>
+            <li class="answer-box">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Integer laoreet convallis eros sed sollicitudin. Etiam massa lorem,
+                lacinia sit amet lorem sit amet, sollicitudin porta nulla.
+              </p>
+            </li>
+          </ul>
+          <ul class="expander-box">
+            <div class="faq-question">
+              <img class="open-faq" src="{{ URL::to('/') }}/images/open-faq.svg" alt="">
+              <img class="close-faq" src="{{ URL::to('/') }}/images/close-faq.svg" alt="">
+              <h3>Hur jobbar ni för att minska energiförbrukningen?</h3>
+            </div>
+            <li class="answer-box">
+              <p>Dummy answer text text text text.</p>
+            </li>
+          </ul>
+
+          <ul class="expander-box">
+            <div class="faq-question">
+              <img class="open-faq" src="{{ URL::to('/') }}/images/open-faq.svg" alt="">
+              <img class="close-faq" src="{{ URL::to('/') }}/images/close-faq.svg" alt="">
+              <h3>Hur bestäms hyresnivåer för era lokaler?</h3>
+            </div>
+            <li class="answer-box">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Integer laoreet convallis eros sed sollicitudin. Etiam massa lorem,
+                lacinia sit amet lorem sit amet, sollicitudin porta nulla.
+              </p>
+            </li>
+          </ul>
+          <ul class="expander-box">
+            <div class="faq-question">
+              <img class="open-faq" src="{{ URL::to('/') }}/images/open-faq.svg" alt="">
+              <img class="close-faq" src="{{ URL::to('/') }}/images/close-faq.svg" alt="">
+              <h3>Hur jobbar ni för att minska energiförbrukningen?</h3>
+            </div>
+            <li class="answer-box">
+              <p>Dummy answer text text text text.</p>
+            </li>
+          </ul>
+
+          <ul class="expander-box">
+            <div class="faq-question">
+              <img class="open-faq" src="{{ URL::to('/') }}/images/open-faq.svg" alt="">
+              <img class="close-faq" src="{{ URL::to('/') }}/images/close-faq.svg" alt="">
+              <h3>Hur bestäms hyresnivåer för era lokaler?</h3>
+            </div>
             <li class="answer-box">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Integer laoreet convallis eros sed sollicitudin. Etiam massa lorem,

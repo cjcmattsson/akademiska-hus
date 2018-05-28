@@ -1,17 +1,41 @@
 .expander-box {
-  // background-color: blue;
+  padding: 0;
+  margin: 0 auto;
+  width: 90%;
   border-bottom: 1px solid grey;
-}
 
-.expander-box > h3 {
-  // background-color: purple;
-  max-width: 80vw;
+  img {
+    width: 18px;
+    margin-right: 10px;
+  }
+
+  .faq-question {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .answer-box {
-  // background-color: lightblue;
+  width: 90%;
+  padding-left: 9%;
   list-style: none;
   display: none;
   padding-bottom: 3vh;
-  max-width: 74vw;
+}
+
+@media screen and (max-width: 330px) {
+  .answer-box {
+    padding-left: 11%;
+  }
+}
+
+.close-faq {
+  display: none;
+}
+
+.hide-faq {
+  display: none;
+}
+.show-faq {
+  display: block;
 }
