@@ -26,31 +26,35 @@ use Illuminate\Support\Facades\Auth;
               {{-- Put this in the cog-wheel section later --}}
               {{-- <a class="nav-link" href="{{url('login')}}">LOGIN</a> --}}
 
+              {{-- contact side menu starts here --}}
               <div class="contact-side-menu">
                 <div class="side-menu-header contact">
                   <i class="material-icons">phone</i>
                   <h2>Kontakt</h2>
                 </div>
-                  <div class="campus-section">
-                    <h2>{{$campus->name}}</h2>
-                    <p>Data from database</p>
-                    <p>Data from database</p>
-                    <p>Data from database</p>
-                    <p>Data from database</p>
-                  </div>
-                  <div class="akademiska-hus-section">
-                    <h2>Akademiska Hus</h2>
-                    <p>Växel: 031-63 24 00</p>
-                    <p>E-post: info@akademiskahus.se</p>
-                  </div>
-                  <div class="jour">
-                    <h2>Journummer</h2>
-                    <p>Data from database</p>
-                  </div>
-                <button class="close-contact-menu" type="button" name="button">STÄNG SKITEN</button>
-
+                <div class="contact-content">
+                    <div class="campus-section">
+                      <h2>{{$campus->name}}</h2>
+                      <p>Data from database</p>
+                      <p>Data from database</p>
+                      <p>Data from database</p>
+                      <p>Data from database</p>
+                    </div>
+                    <div class="akademiska-hus-section">
+                      <h2>Akademiska Hus</h2>
+                      <p>Växel: 031-63 24 00</p>
+                      <p>E-post: info@akademiskahus.se</p>
+                    </div>
+                    <div class="jour">
+                      <h2>Journummer</h2>
+                      <p>Data from database</p>
+                    </div>
+                  <button class="close-contact-menu" type="button" name="button">STÄNG SKITEN</button>
               </div>
+            </div> {{-- contact-side menu ends here --}}
+
+            {{-- settings-side menu starts here --}}
               <div class="settings-side-menu">
                 <button class="close-settings-menu" type="button" name="button">STÄNG SKITEN</button>
-              </div>
+              </div>{{-- settings-side menu ends here --}}
 </div>

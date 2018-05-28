@@ -13,16 +13,20 @@
   color: white;
 
   h2 {
-    font-family: $header-font;
+    // font-family: $header-font;
+    font-family: $regular;
     font-size: 25px;
     font-weight: 100;
+  }
+  p {
+    font-family: $thin-font;
   }
 }
 
 .contact-side-menu {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   .side-menu-header {
     top: 0;
     height: 12%;
@@ -42,7 +46,6 @@
     }
   }
 }
-
 
 .settings-side-menu {
   right: -85vw;
@@ -64,4 +67,20 @@
   p {
     margin: 0;
   }
+}
+
+.contact-content{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+
+  div p:nth-child(2) {
+    color: red;
+    font-family: $condensed;
+  }
+}
+
+.campus-section, .akademiska-hus-section, .jour {
+  margin-left: 5vw;
+  justify-content: flex-end;
 }
