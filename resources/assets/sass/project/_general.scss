@@ -15,3 +15,11 @@ a:focus, a:active {
 button:active, button:focus {
   outline: none;
 }
+
+.loading-gif {
+  position: relative;
+  width: 80px;
+  margin: 0 auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%)
+}

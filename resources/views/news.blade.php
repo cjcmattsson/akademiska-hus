@@ -62,6 +62,7 @@
           </div>
         </div>
       </div>
+      <img class="loading-gif" src="{{ URL::to('/') }}/images/loading.gif" alt="">
     </div>
 
     {{-- CAMPUS FEED --}}
@@ -75,7 +76,7 @@
           </div>
           <div class="bot-text-and-button">
             <p>Katarina Blasson, docent i Bla & bla</p>
-            <button type="button" name="button"><i class="material-icons">keyboard_arrow_right</i></button>
+            <img src="{{ URL::to('/') }}/images/right-arrow-purple.svg" alt="">
           </div>
         </div>
       </div>
@@ -88,7 +89,7 @@
           </div>
           <div class="bot-text-and-button">
             <p>Katarina Blasson, docent i Bla & bla</p>
-            <button type="button" name="button"><i class="material-icons">keyboard_arrow_right</i></button>
+            <img src="{{ URL::to('/') }}/images/right-arrow-purple.svg" alt="">
           </div>
         </div>
       </div>
@@ -101,7 +102,7 @@
           </div>
           <div class="bot-text-and-button">
             <p>Katarina Blasson, docent i Bla & bla</p>
-            <button type="button" name="button"><i class="material-icons">keyboard_arrow_right</i></button>
+            <img src="{{ URL::to('/') }}/images/right-arrow-purple.svg" alt="">
           </div>
         </div>
       </div>
@@ -114,7 +115,7 @@
           </div>
           <div class="bot-text-and-button">
             <p>Katarina Blasson, docent i Bla & bla</p>
-            <button type="button" name="button"><i class="material-icons">keyboard_arrow_right</i></button>
+            <img src="{{ URL::to('/') }}/images/right-arrow-purple.svg" alt="">
           </div>
         </div>
       </div>
@@ -127,7 +128,7 @@
           </div>
           <div class="bot-text-and-button">
             <p>Katarina Blasson, docent i Bla & bla</p>
-            <button type="button" name="button"><i class="material-icons">keyboard_arrow_right</i></button>
+            <img src="{{ URL::to('/') }}/images/right-arrow-purple.svg" alt="">
           </div>
         </div>
       </div>
@@ -140,10 +141,11 @@
           </div>
           <div class="bot-text-and-button">
             <p>Katarina Blasson, docent i Bla & bla</p>
-            <button type="button" name="button"><i class="material-icons">keyboard_arrow_right</i></button>
+            <img src="{{ URL::to('/') }}/images/right-arrow-purple.svg" alt="">
           </div>
         </div>
       </div>
+      <img class="loading-gif" src="{{ URL::to('/') }}/images/loading.gif" alt="">
   </div>
 
 
@@ -268,6 +270,7 @@
               </p>
             </li>
           </ul>
+          <img class="loading-gif" src="{{ URL::to('/') }}/images/loading.gif" alt="">
       </div>
     </div>
   </div>

@@ -4,6 +4,11 @@
   width: 90%;
   border-bottom: 1px solid grey;
 
+  h3 {
+    padding-top: 5px;
+    font-size: 18px;
+  }
+
   img {
     width: 18px;
     margin-right: 10px;
@@ -21,6 +26,10 @@
   list-style: none;
   display: none;
   padding-bottom: 3vh;
+  p {
+    font-family: $thin-font;
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 330px) {

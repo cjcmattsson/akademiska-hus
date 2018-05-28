@@ -5,12 +5,13 @@
   flex-direction: row;
   width: 100vw;
   height: 40px;
-  background-color: rgb(235, 235, 235);
+  background-color: #F4F5F7;
   padding: 0 10%;
 
   .feed-nav-item {
+    margin-top: 5px;
     text-transform: uppercase;
-    color: grey;
+    color: rgba(0, 0, 0, 0.4);
     width: 33%;
     display: flex;
     justify-content: center;
@@ -19,6 +20,8 @@
 
 
   .active-feed-nav-item {
+    margin-top: 9px;
+    color: black;
     border-bottom: 4px solid $main-green;
   }
 

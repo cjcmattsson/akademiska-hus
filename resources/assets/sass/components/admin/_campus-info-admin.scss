@@ -42,6 +42,7 @@
       justify-content: space-between;
 
       p {
+        font-family: $thin-font;
         font-size: 12px;
       }
     }
@@ -62,6 +63,7 @@
         border: none;
         width: 48%;
         height: 30px;
+        padding-top: 4px;
         color: white;
       }
 

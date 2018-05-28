@@ -81,6 +81,7 @@
               <input type="text" name="telephone" value="" placeholder="0701234567">
               <i class="material-icons check-input">check_circle</i>
             </div>
+            <p class="reason">Vi ber om ert telefonnummer för att enkelt kunna nå er om frågor kring felet uppstår</p>
           </div>
           <div class="email">
             <div class="img-and-label">
@@ -91,6 +92,7 @@
               <input type="text" name="email" value="" placeholder="mail@mail.com">
               <i class="material-icons check-input">check_circle</i>
             </div>
+            <p class="reason">Vi återkopplar till er per mail när felet är åtgärdat</p>
           </div>
       </div>
 

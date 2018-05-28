@@ -53,13 +53,3 @@ window.onload = () => {
     editFaqNav.classList.add('active-nav-item-admin');
   }
 }
-
-var afterStuff = window.getComputedStyle(
-	document.querySelector('.report.nav-item'), ':after'
-).getPropertyValue('background');
-
-console.log(afterStuff);
-// const reportAfter = document.querySelector('.report.nav-item'), ':after';
-// color.addEventListener('click', () => {
-//   console.log("hj");
-// })

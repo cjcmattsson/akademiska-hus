@@ -6,7 +6,7 @@
 
     <div class="campus-main-page">
 
-  <div class="campus-header" style="background-image: url('{{ URL::to('/') }}/images/bohuslan.jpg')">
+  <div class="campus-header" style="background-image: url('{{ URL::to('/') }}/images/chalmers.gif')">
 
     <h1 class="header-hero">{{$campus->name}}</h1>
   </div>
@@ -14,7 +14,7 @@
   <div class="campus-info-and-contact">
     <div class="main-text-overlay"></div>
     <p class="paragraph-text main-text-campus">{{$campus->info}}</p>
-    <button class="read-more" type="button" name="button"></button>
+    <button class="read-more" type="button" name="button">+</button>
     <div class="info-contact-buttons">
       <div class="button-and-text">
         <div class="button"><img class="" src="{{ URL::to('/') }}/images/sakerhet.svg" alt=""></div>
@@ -26,7 +26,7 @@
       </div>
       <div class="button-and-text">
         <div class="button happening-notification"><img class="" src="{{ URL::to('/') }}/images/storningar.svg" alt=""></div>
-        <p>På gång</p>
+        <p>Störningar</p>
       </div>
       <div class="button-and-text">
         <div class="button map"><img class="" src="{{ URL::to('/') }}/images/map-icon-campus-page.svg" alt=""></div>

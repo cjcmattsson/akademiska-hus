@@ -10,9 +10,9 @@ use Illuminate\Support\Facades\Auth;
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-  {{-- <link rel="manifest" href="{{ asset('manifest.json') }}"> --}}
+  <link rel="apple-touch-icon" href="../../../public/images/app-icon.png">
+  <link rel="manifest" href="{{ asset('manifest.json') }}">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/css/swiper.min.css"> --}}
   <title>Campuskollen</title>
 </head>
 <body>

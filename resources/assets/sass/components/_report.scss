@@ -49,12 +49,13 @@
   transform: translateX(100vw);
 
   .buttons {
-    padding: 0 25px 20px;
+    padding: 0 25px 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
     .go-back, .send-report {
+      padding-top: 5px;
       text-transform: uppercase;
       font-size: 16px;
       height: 48px;
@@ -95,6 +96,12 @@
         display: flex;
         align-items: center;
         flex-direction: row;
+
+        .material-icons {
+          font-size: 18px;
+          margin-bottom: 4px;
+          margin-right: 5px;
+        }
       }
 
       p {
@@ -153,10 +160,18 @@
       width: 100%;
       height: auto;
       padding: 15px 25px 0;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       display: flex;
       flex-direction: column;
 
+      .name, .phone, .email {
+        .reason {
+          width: 70%;
+          font-family: $thin-font;
+          font-size: 12px;
+          margin: 5px 0 0;
+        }
+      }
 
       .img-and-label {
         margin: 10px 0 5px;
@@ -173,12 +188,13 @@
         img {
           height: 15px;
           margin-right: 8px;
+          margin-bottom: 4px;
         }
       }
 
       .email .img-and-label img {
         height: 12px;
-        margin-bottom: -4px;
+        margin-bottom: 2px;
       }
 
       .input-and-check {
@@ -311,6 +327,7 @@
         flex-direction: row;
         align-items: center;
         padding: 0 25px;
+        padding-top: 8px;
         width: 100%;
         height: auto;
         min-height: 70px;
@@ -325,6 +342,7 @@
           margin: 5px 0;
 
           .building-name {
+            font-size: 16px;
             margin: 0;
             margin-bottom: 8px;
           }

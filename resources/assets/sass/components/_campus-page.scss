@@ -45,7 +45,7 @@
       border-left: 8px solid $main-green;
       padding-left: 10px;
       font-family: $header-font;
-      font-size: 32px;
+      font-size: 30px;
       color: #3A3F44;
       font-weight: normal;
       margin: 25px;
@@ -73,10 +73,12 @@
     }
 
     .main-text-campus {
+      line-height: 1.5;
       margin-bottom: 0;
       font-size: 18px;
       overflow: hidden;
       max-height: 180px;
+      font-family: $thin-font;
     }
 
     p {
@@ -90,6 +92,8 @@
       border-radius: 50%;
       margin: 0 auto;
       border: 0;
+      padding-top: 5.5px;
+      padding-left: 7.9px;
       color: white;
       font-size: 15px;
       margin-top: -10px;
@@ -152,17 +156,21 @@
           cursor: pointer;
         }
 
-        .happening-notification:after {
+        .happening-notification::after {
           content: '!';
+          display: flex;
+          align-items: center;
+          justify-content: center;
           position:absolute;
+          font-family: monospace;
           top:-12px;
           right:-12px;
           background:$button-purple;
           color:white;
-          width:18px;height:18px;
+          width:18px;
+          height:18px;
           font-size: 13px;
           text-align:center;
-          line-height:18px;
           border-radius:50%;
         }
 
@@ -259,6 +267,7 @@
 
           img {
             height: 5vh;
+            margin-bottom: 8px;
           }
           p {
             text-align: center;

@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 @font-face {
-  font-family: ChronicleRoman;
-  src: url('/fonts/ChronicleTextG1-Roman.otf');
+  font-family: 'ChronicleRoman';
+  src: url('/fonts/ChronicleDispLight.woff2');
 }
 
 @font-face {
-  font-family: SceneLight;
-  src: url('/fonts/scene-light.otf');
+  font-family: 'SceneLight';
+  src: url('/fonts/SceneProLight.woff');
 }
 
 @font-face {
-  font-family: ChronicleDisc;
-  src: url('/fonts/ChronicleDispCond-Light.otf');
+  font-family: 'SceneMedium';
+  src: url('/fonts/SceneProMedium.woff');
 }
 
 $main-font: 'SceneMedium', sans-serif;
 $header-font: 'ChronicleRoman', serif;
-$thin-font: 'SceneStd', sans-serif;
+$thin-font: 'SceneLight', sans-serif;
 
 // $paragraphFontFamily: ''
 $paragraphFontSize: 15px;
