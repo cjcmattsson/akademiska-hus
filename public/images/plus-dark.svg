@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-arrowright-valj-campus</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="välj-campus" transform="translate(-654.000000, -432.000000)" fill="#4F525A">
+            <g id="Expand-icons" transform="translate(654.000000, 432.000000)">
+                <path d="M23.1428571,12.858 L12.8571429,12.858 L12.8571429,23.1437143 C12.8571429,23.6177143 12.4731429,24 12,24 C11.526,24 11.1428571,23.6177143 11.1428571,23.1437143 L11.1428571,12.858 L0.856285714,12.858 C0.383142857,12.858 0,12.4748571 0,12 C0,11.5268571 0.383142857,11.1428571 0.856285714,11.1428571 L11.1428571,11.1428571 L11.1428571,0.857142857 C11.1428571,0.383142857 11.526,0 12,0 C12.4731429,0 12.8571429,0.383142857 12.8571429,0.857142857 L12.8571429,11.1428571 L23.1428571,11.1428571 C23.616,11.1428571 24,11.5268571 24,12 C24,12.4748571 23.616,12.858 23.1428571,12.858" id="icon-arrowright-valj-campus"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,9 +1,14 @@
+@php
+use Illuminate\Support\Facades\Auth;
+@endphp
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   {{-- <link rel="manifest" href="{{ asset('manifest.json') }}"> --}}
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -12,8 +17,11 @@
 </head>
 <body>
 
+@if(!Auth::check())
   @include('partials/top-navigation')
-
+@else
+  @include('partials/top-navigation-admin')
+@endif
   <main>
     @yield('content')
   </main>

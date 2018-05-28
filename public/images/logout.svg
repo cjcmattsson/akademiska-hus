@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="57px" viewBox="0 0 56 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon--log-out--admin</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-0.9%" y="-4.3%" width="101.7%" height="110.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="admin--driftstorningar" transform="translate(-650.000000, -61.000000)" fill="#FFFFFF">
+            <g id="nav-top-" filter="url(#filter-1)">
+                <path d="M681.085489,107.28557 L659.435302,107.28557 L659.435302,69.6337831 L681.085489,69.6337831 L681.085489,77.7020231 L686.417385,77.7020231 L686.417385,69.6337831 C686.417385,66.6754284 683.993796,64.2549564 681.031632,64.2549564 L659.488621,64.2549564 C656.526457,64.2549564 654.102868,66.6754284 654.102868,69.6337831 L654.102868,107.28557 C654.102868,110.243925 656.526457,112.664397 659.488621,112.664397 L681.031632,112.664397 C683.993796,112.664397 686.417385,110.243925 686.417385,107.28557 L686.417385,101.906743 L681.085489,101.906743 L681.085489,107.28557 L681.085489,107.28557 Z M702.574643,89.8043831 L691.856995,79.3156711 L691.856995,85.7702631 L667.621646,85.7702631 L667.621646,93.8385032 L691.856995,93.8385032 L691.856995,100.293095 L702.574643,89.8043831 L702.574643,89.8043831 Z" id="icon--log-out--admin"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -130,6 +130,10 @@
       flex-direction: row;
       justify-content: space-between;
 
+      .input-image {
+        display: none;
+      }
+
       .take-image, .select-image {
         display: flex;
         justify-content: center;
@@ -153,8 +157,28 @@
       display: flex;
       flex-direction: column;
 
-      p {
+
+      .img-and-label {
         margin: 10px 0 5px;
+        height: 18px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        p {
+          margin: 0;
+          text-transform: uppercase;
+        }
+
+        img {
+          height: 15px;
+          margin-right: 8px;
+        }
+      }
+
+      .email .img-and-label img {
+        height: 12px;
+        margin-bottom: -4px;
       }
 
       .input-and-check {
@@ -219,19 +243,19 @@
     align-items: flex-start;
 
     .enlarge-map {
-      color: white;
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 37px;
-      height: 37px;
-      border-radius: 50%;
-      background-color: $main-green;
+      width: 30px;
+      height: 30px;
       position: absolute;
       align-self: flex-end;
       right: 0;
-      margin-right: 20px;
+      margin-right: 25px;
       transform: translateY(-15px);
+      img {
+        width: inherit;
+      }
     }
 
 }
@@ -241,6 +265,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    img {
+      height: 16px;
+      margin-right: 5px;
+    }
 
       h2 {
         text-transform: uppercase;
@@ -315,17 +344,9 @@
           align-items: center;
           justify-content: flex-end;
 
-          button {
-            background-color: $button-purple;
-            border: 0;
-            color: white;
-            font-size: 10px;
+          img {
             width: 25px;
             height: 25px;
-            border-radius: 50%;
-          }
-          button:focus {
-            outline: none;
           }
         }
       }

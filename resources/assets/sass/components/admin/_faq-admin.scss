@@ -1,0 +1,24 @@
+.item-wrapper.faq:nth-child(odd) {
+  background-color: #F4F5F7;
+}
+.item-wrapper.faq:nth-child(even) {
+  background-color: white;
+}
+
+.item-wrapper.faq {
+
+  .text-and-buttons {
+    padding: 10px 30px;
+    width: 100%;
+
+    .header-middle {
+      align-self: flex-start;
+    }
+    .buttons-bottom {
+      align-self: flex-start;
+      width: 70%;
+    }
+
+  }
+
+}

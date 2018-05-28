@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="44px" viewBox="0 0 56 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon--miljoinfo--campusinfo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="campusinfo-campuskollen" transform="translate(-266.000000, -1083.000000)" fill="#6CBE45">
+            <g id="Miljöinfo" transform="translate(239.000000, 1083.000000)">
+                <g id="Leaf" transform="translate(27.000000, 0.000000)">
+                    <path d="M13.8415186,4.4039031 C2.63448514,10.898669 3.27723284,21.4774823 3.66370249,25.3910927 C18.1396006,8.26538668 39.7924571,9.09590143 39.7924571,9.09590143 C39.7924571,9.09590143 9.09832199,19.6108741 0.0834335738,40.6970461 C-0.628515069,42.3615898 3.423845,44.5263165 4.3486745,42.5583831 C7.10908822,36.6944101 10.9556048,32.2964304 10.9556048,32.2964304 C16.6306683,34.4055162 26.4478184,36.8771468 33.4060315,31.9871838 C42.648462,25.4912465 41.7036932,11.0913625 54.8976146,4.08001406 C57.9799886,2.44299804 29.0358162,-4.40201313 13.8415186,4.4039031 L13.8415186,4.4039031 Z" id="icon--miljoinfo--campusinfo"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

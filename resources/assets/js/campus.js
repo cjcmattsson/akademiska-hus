@@ -11,6 +11,28 @@ if (cities) {
     })
 }
 
+const radioLabel = document.querySelectorAll('.radioLabel');
+const campusSelect = document.querySelector('.select-campus-box')
+
+if (campusSelect) {
+  radioLabel.forEach(campusName => {
+    campusName.addEventListener('click', () => {
+      campusSelect.classList.add('show-selection-box');
+      let clickedCampus = campusName.textContent;
+      const nameClicked = document.querySelector('.name-of-clicked');
+      nameClicked.innerHTML = clickedCampus
+    })
+  })
+}
+
+const wrongCampus = document.querySelector('.wrong-campus');
+
+if (wrongCampus) {
+  wrongCampus.addEventListener('click', () => {
+    campusSelect.classList.remove('show-selection-box');
+  })
+}
+
 // Campus Search
 const search = document.querySelector(".input-field-search-campus");
 

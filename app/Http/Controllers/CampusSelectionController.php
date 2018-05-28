@@ -17,6 +17,15 @@ class CampusSelectionController extends Controller
     return view('news');
   }
 
+  public function unsetCampus()
+  {
+    Cookie::queue(Cookie::forget('campus'));
+    $cities = Cities::with('campuses')->get();
+    return view('index', [
+      'cities' => $cities,
+    ]);
+  }
+
 
   public function campusSelection()
   {

@@ -18,9 +18,9 @@ class AuthController extends Controller
     $credentials = $request->only(['email', 'password']);
 
     if (Auth::attempt($credentials)) {
-      return redirect()->intended('/dashboard');
+      return redirect()->intended('/editcampus');
     }
-    return back()->withErrors('The email and/or password you entered was incorrect');
+    return back()->withErrors('Emailadressen eller/och lösenordet ni angivit stämmer inte');
   }
 
   public function logout(Request $request)
