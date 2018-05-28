@@ -24,6 +24,7 @@ feedNavItems.forEach(navItem => {
 
 // BOT NAVBAR
 // Not Admin
+const navbarBot = document.querySelector('.navbar-bot');
 const newsNav = document.querySelector('.news.nav-item');
 const reportNav = document.querySelector('.report.nav-item');
 const campusNav = document.querySelector('.campus-info.nav-item');
@@ -39,6 +40,7 @@ window.onload = () => {
     newsNav.classList.add('active-nav-item');
   } else if (window.location.href.indexOf("felanmallan") != -1) {
     reportNav.classList.add('active-nav-item');
+    navbarBot.classList.add('active-after')
   } else if (window.location.href.indexOf("campusinfo") != -1) {
     campusNav.classList.add('active-nav-item');
   }
@@ -51,3 +53,13 @@ window.onload = () => {
     editFaqNav.classList.add('active-nav-item-admin');
   }
 }
+
+var afterStuff = window.getComputedStyle(
+	document.querySelector('.report.nav-item'), ':after'
+).getPropertyValue('background');
+
+console.log(afterStuff);
+// const reportAfter = document.querySelector('.report.nav-item'), ':after';
+// color.addEventListener('click', () => {
+//   console.log("hj");
+// })

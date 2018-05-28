@@ -150,9 +150,15 @@ body {
 }
 
 .active-nav-item {
-  -webkit-box-shadow: inset 0px -4px 7px -2px rgba(0,0,0,0.52);
-  -moz-box-shadow: inset 0px -4px 7px -2px rgba(0,0,0,0.52);
-  box-shadow: inset 0px -4px 7px -2px rgba(0,0,0,0.52);
+  background-color: #599341;
+}
+
+.active-nav-item::after {
+  background-color: black;
+}
+
+.active-after::after {
+  background-color: #599341!important;
 }
 
 
