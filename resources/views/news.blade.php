@@ -12,7 +12,7 @@
 
     {{-- AHA FEED --}}
     <div class="aha">
-      <div class="aha-feed-item">
+      <div class="aha-feed-item" style="background-image: url('{{ URL::to('/') }}/images/linkoping.jpg')">
         <div class="feed-item-text-and-button">
           <div class="text">
             <h3>Studenter flockas till Amsterdam</h3>
@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="feed-item-smaller">
-        <div class="image"></div>
+        <img class="main-image" src="{{ URL::to('/') }}/images/face.jpg" alt="">
         <div class="text-right">
           <div class="top-text">
             <p>Rum för lärande</p>
@@ -33,7 +33,7 @@
           </div>
         </div>
       </div>
-      <div class="aha-feed-item">
+      <div class="aha-feed-item" style="background-image: url('{{ URL::to('/') }}/images/bild1.jpg')">
         <div class="feed-item-text-and-button">
           <div class="text">
             <h3>Studenter flockas till Amsterdam</h3>
@@ -41,7 +41,7 @@
           <button type="button" name="button">Läs mer</button>
         </div>
       </div>
-      <div class="aha-feed-item">
+      <div class="aha-feed-item" style="background-image: url('{{ URL::to('/') }}/images/bild2.jpg')">
         <div class="feed-item-text-and-button">
           <div class="text">
             <h3>Studenter flockas till Amsterdam</h3>
@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="feed-item-smaller">
-        <div class="image"></div>
+        <img class="main-image" src="{{ URL::to('/') }}/images/face.jpg" alt="">
         <div class="text-right">
           <div class="top-text">
             <p>Rum för lärande</p>
@@ -67,7 +67,7 @@
     {{-- CAMPUS FEED --}}
     <div class="campus">
       <div class="feed-item-smaller">
-        <div class="image"></div>
+        <img class="main-image" src="{{ URL::to('/') }}/images/campus3.jpg" alt="">
         <div class="text-right">
           <div class="top-text">
             <p>Rum för lärande</p>
@@ -80,7 +80,7 @@
         </div>
       </div>
       <div class="feed-item-smaller">
-        <div class="image"></div>
+        <img class="main-image" src="{{ URL::to('/') }}/images/campus2.jpg" alt="">
         <div class="text-right">
           <div class="top-text">
             <p>Rum för lärande</p>
@@ -93,7 +93,7 @@
         </div>
       </div>
       <div class="feed-item-smaller">
-        <div class="image"></div>
+        <img class="main-image" src="{{ URL::to('/') }}/images/campus1.jpg" alt="">
         <div class="text-right">
           <div class="top-text">
             <p>Rum för lärande</p>
@@ -106,7 +106,7 @@
         </div>
       </div>
       <div class="feed-item-smaller">
-        <div class="image"></div>
+          <img class="main-image" src="{{ URL::to('/') }}/images/campus4.jpg" alt="">
         <div class="text-right">
           <div class="top-text">
             <p>Rum för lärande</p>
@@ -119,7 +119,7 @@
         </div>
       </div>
       <div class="feed-item-smaller">
-        <div class="image"></div>
+        <img class="main-image" src="{{ URL::to('/') }}/images/campus3.jpg" alt="">
         <div class="text-right">
           <div class="top-text">
             <p>Rum för lärande</p>
@@ -132,7 +132,7 @@
         </div>
       </div>
       <div class="feed-item-smaller">
-        <div class="image"></div>
+        <img class="main-image" src="{{ URL::to('/') }}/images/campus2.jpg" alt="">
         <div class="text-right">
           <div class="top-text">
             <p>Rum för lärande</p>

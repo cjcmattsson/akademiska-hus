@@ -44,9 +44,14 @@ body {
       color: white;
 
       img {
-        height: 45%;
+        height: 42%;
       }
 
+
+    }
+
+    a.logo img {
+      height: 75%;
     }
     a.settings img {
       height: 42%;
@@ -72,6 +77,7 @@ body {
 }
 // BOTTOM NAVBAR
 .navbar-bot {
+  z-index: 1;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.52);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.52);
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.52);
@@ -84,9 +90,23 @@ body {
   justify-content: center;
   align-items: center;
 
+  .report-icon {
+    z-index: 1000;
+    position: absolute;
+    bottom: 77%;
+    right: 46.8%;
+    width: 25px;
+    height: 25px;
+  }
+
+  @media screen and (max-width: 330px) {
+    .report-icon {
+      right: 46%;
+    }
+  }
+
   .nav-item {
     z-index: 15;
-
     height: 100%;
     display: flex;
     align-items: flex-end;
@@ -109,15 +129,10 @@ body {
   }
 }
 .navbar-bot::after {
-  z-index: 1;
-  font-family: 'Material Icons';
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  z-index: 0;
   position: absolute;
   top: -25px;
-  content: 'build';
-  font-size: 25px;
+  content: '';
   background-color: $main-green;
   height: 55px;
   width: 55px;

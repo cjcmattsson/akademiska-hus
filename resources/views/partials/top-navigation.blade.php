@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Auth;
             <a class="contact"><img src="{{ URL::to('/') }}/images/contact-navbar.svg" alt=""></a>
           </div>
           <div class="top-icon">
-            <a class="logo" href="{{url('/feed')}}"><i class="material-icons">radio</i></a>
+            <a class="logo" href="{{url('/feed')}}"><img src="{{ URL::to('/') }}/images/logo-navbar.svg" alt=""></a>
           </div>
           <div class="top-icon">
             <a class="settings"><img src="{{ URL::to('/') }}/images/settings-navbar.svg" alt=""></a>
@@ -61,10 +61,10 @@ use Illuminate\Support\Facades\Auth;
                   <img src="{{ URL::to('/') }}/images/settings-navbar.svg" alt="">
                 </div>
                 <div class="settings-text">
-                  <a href="{{route('unset.campus')}}"><div class="change-campus">Byt Campus</div></a>
-                  <div class="notifications">Notiser</div>
-                  <div class="help">Hjälp</div>
-                  <a href="{{route('login')}}"><div class="admin-login">Admin login</div></a>
+                  <a href="{{route('unset.campus')}}"><div class="change-campus"><div class="text-image"><img src="{{ URL::to('/') }}/images/byt-campus.svg" alt=""></div>Byt Campus</div></a>
+                  <div class="notifications"><div class="text-image"><img src="{{ URL::to('/') }}/images/notifications.svg" alt=""></div>Notiser</div>
+                  <div class="help"><div class="text-image"><img src="{{ URL::to('/') }}/images/hjalp.svg" alt=""></div>Hjälp</div>
+                  <a href="{{route('login')}}"><div class="admin-login"><div class="text-image"><img src="{{ URL::to('/') }}/images/admin-login.svg" alt=""></div>Admin login</div></a>
                 </div>
                 <button class="close-settings-menu" type="button" name="button">Stäng<img src="{{ URL::to('/') }}/images/close-white.svg" alt=""></button>
               </div>

@@ -3,7 +3,7 @@
 @section('content')
   <div class="campus-selection-header">
     <h1>Campus</h1>
-    <i class="material-icons">radio</i>
+    <img class="start-logo" src="{{ URL::to('/') }}/images/start-logo.svg" alt="">
     <h1>kollen</h1>
   </div>
 
