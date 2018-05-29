@@ -39,7 +39,7 @@ class CreateReportController extends Controller
     ]);
 
     if($createReport){
-      return view('news');
+      return redirect('feed');
     } else {
       abort(404);
     }

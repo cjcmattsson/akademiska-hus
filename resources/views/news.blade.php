@@ -67,19 +67,21 @@
 
     {{-- CAMPUS FEED --}}
     <div class="campus">
+      @foreach($campusNews as $newsItem)
       <div class="feed-item-smaller">
-        <img class="main-image" src="{{ URL::to('/') }}/images/campus3.jpg" alt="">
+        <img class="main-image" src="{{ URL::to('/') }}/images/{{$newsItem->image}}" alt="">
         <div class="text-right">
           <div class="top-text">
-            <p>Rum för lärande</p>
-            <h3>Vi behöver fler relaxytor i våra miljöer</h3>
+            <p>{{$newsItem->category}}</p>
+            <h3>{{$newsItem->header}}</h3>
           </div>
           <div class="bot-text-and-button">
-            <p>Katarina Blasson, docent i Bla & bla</p>
+            <p>{{$newsItem->author}}</p>
             <img src="{{ URL::to('/') }}/images/right-arrow-purple.svg" alt="">
           </div>
         </div>
       </div>
+    @endforeach
       <div class="feed-item-smaller">
         <img class="main-image" src="{{ URL::to('/') }}/images/campus2.jpg" alt="">
         <div class="text-right">

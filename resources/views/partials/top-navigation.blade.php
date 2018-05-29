@@ -35,7 +35,7 @@ use Illuminate\Support\Facades\Auth;
 
                   <div class="campus-section">
                     {{-- <h2>{{$campus->name}}</h2> --}}
-                    <h2>Campus Bohuslän</h2>
+                    <h2>Chalmers - Campus Johanneberg</h2>
                     <p class="c-name">Janne Andersson</p>
                     <p class="c-title">Konsult</p>
                     <p class="c-phone"><img src="{{ URL::to('/') }}/images/phone-icon-white.svg" alt="">031-124 56703</p>

@@ -9,10 +9,12 @@ use Illuminate\Support\Facades\Auth;
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#6FBC4D">
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-  <link rel="apple-touch-icon" href="../../../public/images/app-icon.png">
   <link rel="manifest" href="{{ asset('manifest.json') }}">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  {{-- <link rel="apple-touch-icon" href="../../../public/images/app-icon.png"> --}}
   <title>Campuskollen</title>
 </head>
 <body>
@@ -34,10 +36,10 @@ use Illuminate\Support\Facades\Auth;
     <script>
       if (document.getElementById('map')) {
         function initMap() {
-          var uluru = {lat: 57.68923439454743, lng: 11.974024772644043};
+          var chalmers = {lat: 57.68923439454743, lng: 11.974024772644043};
           var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 15,
-            center: uluru,
+            center: chalmers,
             disableDefaultUI: true,
           })
         }
