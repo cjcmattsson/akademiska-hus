@@ -12,10 +12,10 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('startpage', 'StartPageController@index');
+Route::get('/', 'StartPageController@index');
 
-Route::get('/', 'CampusSelectionController@campusSelection')->name('select.campus');
-Route::post('/', 'CampusSelectionController@setCampusCookie')->name('store.campus');
+Route::get('/setCampus', 'CampusSelectionController@campusSelection')->name('select.campus');
+Route::post('/setCampus', 'CampusSelectionController@setCampusCookie')->name('store.campus');
 Route::get('unsetcampus', 'CampusSelectionController@unsetCampus')->name('unset.campus');
 
 // route to the error-report section
