@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Auth;
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   <link rel="manifest" href="{{ asset('manifest.json') }}">
 
-  <link rel="shortcut icon" href="{{ asset('images/ahus-logo.png') }}">
+  <link rel="shortcut icon" href="{{ asset('images/app-icon.png') }}">
   <link rel="apple-touch-icon" href="{{ asset('images/app-icon.png') }}">
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
