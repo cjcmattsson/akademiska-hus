@@ -11,7 +11,10 @@ An app where users can report errors that occur in buildings managed by Akademis
 - Download or clone the repository
 - If you have not already, install npm.
 - Navigate to root file of repository
-- Run commands:
+- Create MySQL database and setup database info in .env file
+- Run php artisan migrate in terminal
+- Populate tables with data of your choosing
+- Run commands in terminal:
 ```sh
   $ npm install
   $ php artisan serve
