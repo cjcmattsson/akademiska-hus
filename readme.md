@@ -14,6 +14,7 @@ An app where users can report errors that occur in buildings managed by Akademis
 - Run commands:
 ```sh
   $ npm install
+  $ php artisan serve
   $ npm run watch
 ```
 
