@@ -36,7 +36,7 @@
     </div>
   </div>
 
-<form class="" action="{{action('CreateReportController@sendReport')}}" method="post">
+<form id="report-form" class="report-form" action="{{action('CreateReportController@sendReport')}}" method="post">
 @csrf
   <div class="report-second-page">
       <div class="report-header second">
@@ -98,12 +98,17 @@
 
       <div class="buttons">
         <button class="go-back" type="button" name="button">Gå Tillbaka</button>
-        <button class="send-report" type="submit" name="button">Skicka Anmälan</button>
+        <button class="send-report" type="button" name="button">Skicka Anmälan</button>
       </div>
   </div>
 </form>
 
-
+<div class="report-thanks-message">
+  <h2>Tack! <br> Din felanmällan skickas</h2>
+  <div class="loading-gif-div">
+    <img class="loading-gif-report" src="{{ URL::to('/') }}/images/loading.gif" alt="">
+  </div>
+</div>
 </div>
 
 @stop

@@ -33,3 +33,21 @@ if (inputs) {
     })
   })
 }
+
+const sendButton = document.querySelector('.send-report');
+
+function handleSubmit(){
+       document.getElementById('report-form').submit();
+    }
+
+function delaySubmit(){
+          window.setTimeout(handleSubmit, 3000); // change this to whatever delay you need
+    };
+
+if (sendButton) {
+  sendButton.addEventListener('click', () => {
+    document.querySelector('.report-thanks-message').classList.add('show-thanks');
+    delaySubmit();  // 5 seconds
+    return false;
+  });
+}
